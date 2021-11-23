@@ -4,3 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #a88d41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
