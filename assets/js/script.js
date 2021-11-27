@@ -6,13 +6,16 @@ let throttleAmount = 4;
 countdown(10);
 
 function countdown(secs) {
-    let milli = secs * 1000;
+    const milli = secs * 1000;
     let counter = setInterval(function() {
-        if(milli <= 0) {
-            clearInterval(counter);
-            return
-        }
-        milli -= throttleAmount;
+        // Stackoverflow code to make this function work.
+        
         document.getElementById("milliseconds").innerHTML = `${milli} ms`;
     }, throttleAmount);
 }
+
+document.getElementById("btn").addEventListener("click", function(){
+    let button = 
+    console.log("btn");
+});
+
