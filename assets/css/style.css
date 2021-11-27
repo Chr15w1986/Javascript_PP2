@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,256&family=Space+Mono&display=swap');
 
+/* Global styling */
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +17,7 @@ body {
     font-family: 'Space Mono', monospace;
     padding: 0 5px 0 5px;
 }
-
+/* Icon and text styling */
 .fas {
     font-size: 2.5em;
     color: rgb(35, 12, 240);
@@ -42,6 +43,7 @@ p {
     border: solid 1px #000;
 }
 
+/* styling for timer and button */
 #milliseconds {
     margin-top: 30px;
 }
