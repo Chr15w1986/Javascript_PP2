@@ -48,10 +48,17 @@ p {
     margin-top: 30px;
 }
 
-#btn {
+#btn, #btn2 {
     margin-top: 30px;
     font-size: 50px;
     background-color: rgb(190, 4, 4);
     border-radius: 50px;
     text-decoration: none;
+}
+
+div, button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
