@@ -3,7 +3,7 @@
 // Countdown timer functions:
 const throttleAmount = 4;
 
-countdown(10);
+countdown(5);
 
 function countdown(secs) {
     let milli = secs * 1000;
@@ -18,14 +18,18 @@ function countdown(secs) {
     }, throttleAmount);
 }
 
+// Stop and Reset button functions:
 document.getElementById("btn").addEventListener("click", function(){
-    $("#btn").click(function(){
+    this.querySelector("#btn").click(function(){
         clearInterval(counter);
     });
 });
+
+function Reset() {
 document.getElementById("btn2").addEventListener("click", function(){
-    $("#btn2").reset(function(){
+    this.querySelector("#btn2").reset(function(){
         resetInterval(counter);
         alert("Clock reset, Try Again");
     });
 });
+}
