@@ -17,13 +17,20 @@ function countdown(secs) {
     }, throttleAmount);
 }
 
-// Stop and Reset button functions:
-document.getElementById("btn").addEventListener("click", function () {
+// Start, Stop and Reset buttons:
+// Start timer:
+document.getElementById("start").addEventListener("click", function () {
+    clearInterval(countdown(5));
+});
+
+// Stop timer:
+document.getElementById("stop").addEventListener("click", function () {
     clearInterval(countdown(0));
     alert("Oooh So Close!");
 });
 
-document.getElementById("btn2").addEventListener("click", function () {
+// Reset game:
+document.getElementById("reset").addEventListener("click", function () {
     setInterval(countdown(5));
     if (counter <= 0) {
         setInterval(counter(5));
