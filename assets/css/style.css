@@ -51,7 +51,15 @@ p {
     font-family: "Space mono", Raleway, sans-serif;
 }
 
-#btn {
+#start {
+    margin-top: 30px;
+    font-size: 50px;
+    background-color: rgba(4, 7, 190, 0.774);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#stop {
     margin-top: 30px;
     font-size: 50px;
     background-color: rgb(190, 4, 4);
@@ -59,7 +67,7 @@ p {
     text-decoration: none;
 }
 
-#btn2 {
+#reset {
     margin-top: 30px;
     font-size: 50px;
     background-color: rgb(0, 161, 22);
