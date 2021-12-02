@@ -11,7 +11,7 @@ function countdown(secs) {
             return
         }
 
-// Stack over flow fix to get millisecond timer to work correctly.
+        // Stack over flow fix to get milliseconds to work correctly.
         timer -= throttleAmount;
         document.getElementById("milliseconds").innerHTML = `${timer}ms`;
     }, throttleAmount);
@@ -21,22 +21,23 @@ function countdown(secs) {
 // Start timer:
 document.getElementById("start").addEventListener("click", function () {
     clearInterval(countdown(5));
+    console.log(start)
 });
 
 // Stop timer:
 document.getElementById("stop").addEventListener("click", function () {
     clearInterval(countdown(0));
-    alert("Oooh So Close!");
+    console.log(stop)
 });
 
 // Reset game:
 document.getElementById("reset").addEventListener("click", function () {
     setInterval(countdown(5));
-    if (counter <= 0) {
+    if (countdown <= 0) {
         setInterval(counter(5));
-            return
+        return
     }
-    alert("Clock reset, Try Again");
+    console.log(reset)
 });
 
 countdown(5);
