@@ -8,31 +8,42 @@
 }
 
 body {
-    background-color: #a88d41;
+    background-image: url('/images/alarm-clock-2806058_960_720.png');
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: center;
+    background-color: #cc9c19;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
     justify-content: center;
     font-family: 'Raleway', Spacemono, sans-serif;
     padding: 0 5px 0 5px;
+    margin-top: 1em;
 }
 
 /* Icon and text styling */
 .fas {
-    font-size: 2.5em;
-    color: rgb(35, 12, 240);
+    font-size: 3em;
+    color: rgb(118, 1, 153);
+    margin: 5px;
+    padding-top: 35px;
+    padding-bottom: 0.5em;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 2.1em;
+    font-weight: bolder;
+    color: rgb(200, 200, 200);
     text-align: center;
-    padding-bottom: 1em;
+    margin: 10px;
+    padding-top: 25px;
 }
 
 p {
     font-size: 1em;
-    color: #000;
+    color: rgb(200, 200, 200);
+    font-weight: 800;
     text-align: center;
 }
 
@@ -46,32 +57,42 @@ p {
 
 /* styling for timer and button */
 #milliseconds {
-    margin-top: 30px;
-    font-size: 150%;
+    margin-top: 5px;
+    color: rgb(200, 200, 200);
+    font-size: 160%;
+    border: solid 2px rgb(121, 119, 119);
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
     font-family: "Space mono", Raleway, sans-serif;
 }
 
 #start {
-    margin-top: 30px;
-    font-size: 50px;
-    background-color: rgba(4, 7, 190, 0.774);
-    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 35px;
+    color: rgb(153, 146, 146);
+    background-color: rgba(68, 70, 189, 0.774);
+    border-radius: 10px;
+    box-shadow: #000;
     text-decoration: none;
 }
 
 #stop {
-    margin-top: 30px;
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 35px;
+    color: rgb(153, 146, 146);
     background-color: rgb(190, 4, 4);
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: #000;
     text-decoration: none;
 }
 
 #reset {
-    margin-top: 30px;
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 35px;
+    color: rgb(153, 146, 146);
     background-color: rgb(0, 161, 22);
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: #000;
     text-decoration: none;
 }
 
