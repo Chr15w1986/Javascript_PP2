@@ -31,9 +31,6 @@ document.getElementById("stop").addEventListener("click", function () {
     clearInterval(counter); //stops the timer
     if (timer <= 200) {
         alert("YOU WIN!!")
-    } else {
-        timer = 0
-        alert("YOU LOSE!!")
     }
 });
 
