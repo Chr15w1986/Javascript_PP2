@@ -10,20 +10,18 @@ function countdown(secs) {
     counter = setInterval(function () {
         if (timer <= 4) { //if timer is less than or equal to 4, do this and then continue to line 20.
             clearInterval(counter); //stops the timer
-            // return
         }
 
         // Stack over flow fix to get milliseconds to work correctly.
         // timer = timer - throttleAmount;
         timer -= throttleAmount;
-        document.getElementById("milliseconds").innerHTML = `${timer}ms`; 
+        document.getElementById("milliseconds").innerHTML = `${timer}ms`;
     }, throttleAmount); //do this every 4 milliseconds
 }
 
 // Start, Stop and Reset buttons:
 // Start timer:
 document.getElementById("start").addEventListener("click", function () {
-    // clearInterval(counter);
     countdown(timer); //this runs countdown with the current value of timer
     console.log("start")
 });
@@ -31,7 +29,12 @@ document.getElementById("start").addEventListener("click", function () {
 // Stop timer:
 document.getElementById("stop").addEventListener("click", function () {
     clearInterval(counter); //stops the timer
-    console.log(stop)
+    if (timer <= 200) {
+        alert("YOU WIN!!")
+    } else {
+        timer = 0
+        alert("YOU LOSE!!")
+    }
 });
 
 // Reset game:
@@ -40,5 +43,3 @@ document.getElementById("reset").addEventListener("click", function () {
     countdown(5000); // puts the timer to 5000ms and counts down. 
     console.log(reset)
 });
-
-// countdown(5);
