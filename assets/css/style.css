@@ -8,16 +8,12 @@
 }
 
 body {
-    background-image: url('/images/alarm-clock-2806058_960_720.png');
+    background-image: url('/images/alarm-clock.png');
     background-repeat: no-repeat;
-    background-size: 380px;
+    background-size: 450px;
     background-position: center;
-    background-color: #cc9c19;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Raleway', Spacemono, sans-serif;
+    background-color: rgb(221,185,86);
+    font-family: "Space mono", sans-serif;
     padding: 0 5px 0 5px;
     margin-top: 1em;
 }
@@ -32,66 +28,76 @@ body {
 }
 
 h2 {
-    font-size: 2.1em;
+    font-size: 2.2em;
     font-weight: bolder;
-    color: rgb(200, 200, 200);
+    color: rgb(32, 30, 30);
     text-align: center;
+    border: solid 0.5px rgb(221,185,86);
+    background-color: rgb(221, 185, 86, 0.7);
+    border-radius: 20px;
     margin: 10px;
-    padding-top: 25px;
 }
 
 p {
     font-size: 1em;
-    color: rgb(200, 200, 200);
+    color: rgb(32, 30, 30);
     font-weight: 800;
     text-align: center;
+}
+
+#intro {
+    border: solid 0.5px rgb(221,185,86);
+    background-color: rgb(221, 185, 86, 0.7);
+    border-radius: 20px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border: none;
 }
 
 /* styling for timer and button */
 #milliseconds {
-    margin-top: 5px;
-    color: rgb(200, 200, 200);
-    font-size: 160%;
-    border: solid 2px rgb(121, 119, 119);
-    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(221, 185, 86, 0.7);
+    color: rgb(32, 30, 30);
+    font-size: 180%;
+    border: solid 2px rgb(221, 185, 86,);
+    border-radius: 20px;
     padding: 0 10px 0 10px;
     font-family: "Space mono", Raleway, sans-serif;
 }
 
 #start {
     margin-top: 20px;
+    padding: 0 10px 0 10px;
     font-size: 35px;
-    color: rgb(153, 146, 146);
-    background-color: rgba(68, 70, 189, 0.774);
-    border-radius: 10px;
-    box-shadow: #000;
+    color: rgb(49, 49, 49);
+    background-color: rgb(0, 161, 22);
+    border-radius: 20px;
     text-decoration: none;
 }
 
 #stop {
     margin-top: 20px;
+    padding: 0 10px 0 10px;
     font-size: 35px;
-    color: rgb(153, 146, 146);
+    color: rgb(49, 49, 49);
     background-color: rgb(190, 4, 4);
-    border-radius: 10px;
-    box-shadow: #000;
+    border-radius: 20px;
     text-decoration: none;
 }
 
 #reset {
     margin-top: 20px;
+    padding: 0 10px 0 10px;
     font-size: 35px;
-    color: rgb(153, 146, 146);
-    background-color: rgb(0, 161, 22);
-    border-radius: 10px;
+    color: rgb(49, 49, 49);
+    background-color: rgb(250, 171, 0);
+    border-radius: 20px;
     box-shadow: #000;
     text-decoration: none;
 }
@@ -102,4 +108,17 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#rules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: rgb(32, 30, 30);
+    font-size: 75%;
+    line-height: 20px;
+    background-color: rgb(221, 185, 86, 0.7);
+    border-radius: 20px;
+    padding: 0 30px 30px 30px;
 }
