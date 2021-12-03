@@ -1,108 +1,346 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# PORTFOLIO PROJECT - 2
 
-Welcome USER_NAME,
+# ONE STOP CLOCK
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## PURPOSE
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+'One Stop Clock' is a game where your reaction timing is key. Test your reactions by trying to get the timer as close to zero as possible with the use of the three buttons, Start, Stop and Reset.
+* [Here is a link to the final project](https://chr15w1986.github.io/Javascript_PP2/)
+## FINAL DESIGN
 
-## Gitpod Reminders
+![Final project image home page](testing/responsive-test.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## INITIAL IDEA CONCEPT
 
-`python3 -m http.server`
+My initial idea for the project was to create a game that is simple to use and competitive. The game is for all ages and skill levels.
+I chose to make the game quite bright and fun looking with yellows and blues.
 
-A blue button should appear to click: _Make Public_,
+* The Features I wanted the game to have are:
 
-Another blue button should appear to click: _Open Browser_.
+    * To have simple to read rules.
+    * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
+    * Have a simple layout with 3 clear buttons with corresponding colours 
+    * Look fun with images, and be educational
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#  
+#  
+## CONTENTS
 
-A blue button should appear to click: _Make Public_,
+- [PORTFOLIO PROJECT - 2](#portfolio-project---2)
+- [ONE STOP CLOCK](#one-stop-clock)
+  - [PURPOSE](#purpose)
+  - [FINAL DESIGN](#final-design)
+  - [INITIAL IDEA CONCEPT](#initial-idea-concept)
+- [](#)
+- [](#-1)
+  - [CONTENTS](#contents)
+- [](#-2)
+- [UX/UI](#uxui)
+  - [USER STORIES](#user-stories)
+  - [WIREFRAMES](#wireframes)
+  - [FEATURES](#features)
+  - [DESIGN](#design)
+- [](#-3)
+- [TESTING](#testing)
+  - [DEVICES](#devices)
+  - [Validators](#validators)
+  - [Lighthouse](#lighthouse)
+  - [Home](#home)
+  - [Rules](#rules)
+  - [Gallery](#gallery)
+  - [Contact](#contact)
+  - [Thankyou](#thankyou)
+  - [Accessibility](#accessibility)
+  - [SOLVED BUGS AND ERRORS](#solved-bugs-and-errors)
+  - [UNSOLVED BUGS OR ERRORS](#unsolved-bugs-or-errors)
+  - [FUNCTIONALITY](#functionality)
+- [TECHNOLOGIES USED](#technologies-used)
+  - [PROGRAMS USED](#programs-used)
+- [DEPLOYMENT](#deployment)
+  - [REMOTE DEPLOYMENT:](#remote-deployment)
+  - [HOW TO FORK A REPOSITORY:](#how-to-fork-a-repository)
+  - [HOW TO CLONE A REPOSITORY:](#how-to-clone-a-repository)
+  - [HOW TO MAKE A LOCAL CLONE](#how-to-make-a-local-clone)
+  - [CREDITS AND REFERENCES](#credits-and-references)
+    - [IMAGES AND INFORMATION](#images-and-information)
+    - [CODE](#code)
+- [](#-4)
+  - [ACKNOWLEDGEMENTS:](#acknowledgements)
+      - [RETURN TO THE TOP](#return-to-the-top)
 
-Another blue button should appear to click: _Open Browser_.
+- [CREDITS](#credits-and-references)
+  * [IMAGES AND INFORMATION](#images-and-information)
+  * [CODE](#code)
+- [ACKNOWLEDGEMENTS](#acknowledgements)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#  
+#
+# UX/UI
+* This website was created to show my knowledge of HTML and CSS and to provide users with visual and educational content
+* The site should be simple to navigate
+* The sit should be easy to read, images should be clear without stretching or squashing
 
-To log into the Heroku toolbelt CLI:
+Site Goals:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* To showcase my skills in HTML and CSS
+* To provide users with an easy to understand and easy to navigate website
+* To provide users with enough information to return to the website for projects and/or education
+* To make the site easily accessible
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## USER STORIES
 
-------
+* As a user, I want to easily understand the main purpose of the site
+* As a user, I want to be able to navigate the site with an easy to see and read navbar.
+* As a user, I want the site to be attractive
+* As a user, I want to be able to learn something new
+* As a user, I want to see images and videos related to the subject
 
-## Release History
+## WIREFRAMES
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Wireframes for mobile and desktop can be viewed [here](assets/wireframes/wireframes.pdf)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## FEATURES
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* The site consists of: 
+    * 4 main pages, `HOME, RULES, GALLERY, CONTACT` and an additional `THANKYOU` page
+    * Each page will have the same body layout, `HEADER (TITLE)`, `NAVBAR`, `MAIN CONTENT (TEXT AND IMAGES)` and `FOOTER (SOCIAL MEDIA ICONS/LINKS, TERMS/SMALLPRINT)`
+* Navigation bar:
+* <img src="testing/navbar.png" width=400>
+* Footer:
+* <img src="testing/footer.png" width=400>
+* Layout and content:
+    * The Home page will have some introductory text and 4 images, followed by an overview of the site and two videos
+    * The Rules page will have information on the rules and styles of the sport including accompanying images
+    * The Gallery will have multiple images varying scenes in the sport of trials riding
+    * The Contact page will have a form to include first name, last name, email address and a submit button
+    * The Thankyou page with have some thankyou text and a thumbs up logo
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Hover effect on links and social media icons:
+    * Indicates to the user the location of the mouse whilst navigating the menu
+    * A Curved underline helps the user to know which page they are currently on
+    * <img src="testing/hover effect.png" width=400>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Contact Form:
+    * Form validation requests the user to input the correct information in the input fields,
+      This avoids the user sending illegible text/email.
+    * <img src="testing/requiredtext.png" width=400>
+## DESIGN
+* Color Scheme:
+    * With being a website that is both educational and fun, the color scheme chosen were shades of Grey. Both light, medium and dark grey were used for different elements of the site to provide a blend from background to foreground. The foreground text and images will be brighter and lighter than the background (Off white text) (See hex colours below)
+    * The difference between the darker background and lighter text brings contrast to the site and a definite seperation between the two
+  
+<img src="testing/lightgrey.png" width=200>
+<img src="testing/mediumgrey.png" width=200>
+<img src="testing/darkgrey.png" width=200>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* IMAGES
+    * I sourced several images for the home page, rules page and gallery
+    * There are a total of 15 images across the site, including one for the background image
+    * All images have been compressed through `Tinypng.com`
+    * None of the images used have been pushed past the pixel limit in order to prevent image distortion
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* TYPOGRAPHY
+    * The fonts used for my website is "Gemunu Libre" and "Monserrat". The font is imported from Google Fonts
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# TESTING
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* The site has been tested through multiple tests on each individual page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* `As a user, I want to easily understand the main purpose of the site`:
+    * Upon loading the home page, you will be greeted with a short paragraph about the sites context, "Lets get back to basics" followed by four Trials related images
+* `As a user, I want to be able to navigate the site with an easy to see and read navbar`:
+    * This was fulfilled with clear to read wording, only four links with an underline for the page currently viewing
+* `As a user, I want the site to be attractive`:
+    * Made sure the visual effects, links, wording and images are appealing to the eye with the use of different shades of the same colour with brighter images and text
+* `As a user, I want to be able to learn something new`:
+    * I included multiple images accompanied with text related to each style of the sport and the rules around the sport
+* `As a user, I want to see images and videos related to the subject`
+    * I included a `Gallery` section (the 3rd nav link from the left) which includes multiple varied images
+    * On the `Home` page, I included four small images that spread across the page, and two youtube videos at the bottom of the page
+    * As above, there are images accompanying each paragraph in the `Rules` page
+## DEVICES
+* I have tested responsiveness and functionality on the following devices and browsers:
+    * Android:
+      * Samsung S20 FE
+      * Samsung A10
+      * Samsung S10
+      * Samsung Galaxy Tab A
+    * Apple:
+      * Ipad mini
+      * Iphone 6s
+      * Iphone XS
+      * Iphone 11
+    * Desktops/laptops:
+      * Dell XPS15 9570 Laptop
+      * HP Pavillion Laptop
+      * Lenovo Thinkpad
+    * Browsers:
+      * Chrome
+      * Edge
+      * Firefox
+      * Safari
+      * Samsung internet
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Validators
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* I ran all of my code through css-validator and html-validator, and I was given multiple errors of `grid-area-templates` and `misplaced end tag`
+* I have since corrected these errors and run the validators again and have found no errors. [CSS screenshot](testing/css-no-errors.png) and [HTML screenshot](testing/html-no-errors.png)
+* There we also 5 warnings that still exist in CSS code. Although they are imported style sheets and vendor extensions which are needed for my code to work. [Warnings found here](testing/css-warnings.png)
 
-------
+* See [HERE](https://jigsaw.w3.org/css-validator/validator?uri=chr15w1986.github.io%2FPortfolio-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) for the full report on CSS Validator
+* See [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchr15w1986.github.io%2FPortfolio-1%2Findex.html) for the home page report on HTML Validator
 
-## FAQ about the uptime script
+## Lighthouse
 
-**Why have you added this script?**
+* I ran each page live through Chrome Lighthouse and received the following results with an average of 96.2% across the site
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Home
+![homepage](/testing/home.png)
 
-**How will this affect me?**
+## Rules
+![rulespage](/testing/rules.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Gallery
+![gallerypage](/testing/gallery.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Contact
+![contactpage](/testing/contact.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Thankyou
+![thankyoupage](/testing/thankyou.png)
 
-**So….?**
+## Accessibility
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Each page has been through wave.webaim.org for accessibility testing.
+    * Found here: [Full Report](https://wave.webaim.org/report#/https://chr15w1986.github.io/Portfolio-1/index.html)
 
-**Can I opt out?**
+## SOLVED BUGS AND ERRORS
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* I noticed a bug on each page that was identified as a lack of `max-width` on the `body` element, I have since set this to `1920px`
+* Youtube videos on the home page would overlap at screen widths smaller than `650px`. This was cured with the use of `position:relative` and `position:absolute`
+* The `navbar` would always "hang" to the left until media queries kicked in at 440px, at which point the would centre align and stack. This was cured by the use of `display:grid`. Now they are inline, centred and responsive
+* Once the form on the contact page was filled in and the `GO!` button pressed, I wanted the next page to be a `Thankyou for contacting us` page. This didnt seem to work. The `form method="POST"` attribute that I was using seem to be the culprit, This has now been changed to `form method="GET"` and it now works fine
+* On the `Thankyou for contacting us` page, the `Return to Home` button didnt work the way I wanted it to, this was solved by wrapping the `input` element in a `form` element and giving the form a `method="GET"`
+* The four images on the main page were unresponsive, they either stacked or overlapped at any screen size below around 800px. This was sorted by setting up a `grid`. This then gave me the control to move the images where I wanted them at multiple screen widths
+* Any duplicate or unused selectors, classes, id's and elements have been removed
+* Any irrelevant space in between code has been removed
+* On Apple Safari Browser and Samsung Internet the `HERE` link appeared black or darker, but stayed white on chrome. Solved the issue on Safari by targeting the link directly and setting the colour to an off shade of white `#d6d4d4` rather than `inherit` to keep consistency throughout the page. This issue still exists on Samsung internet. The cause is `light-mode` and `dark-mode` settings on samsung phones which inverts colours, and not the code itself
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## UNSOLVED BUGS OR ERRORS
+* The navbar `contact` link overflows as the screen gets below 270px wide
+* The `central images` on the home screen overflow on the right side of the screen below 270px wide
+* The two `Youtube videos` overflow (stop being responsive) when the screen width is below 270px wide
 
-**Anything more?**
+## FUNCTIONALITY
+* All links have been hovered over and clicked on to ensure accessibility
+* Pages all load correctly on all device screen sizes
+* All Social media links work correctly and open on a new tab
+* All images load on each page as intended
+#
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+# TECHNOLOGIES USED
 
----
+* [HTML](https://en.wikipedia.org/wiki/HTML5)
+* [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
+## PROGRAMS USED
 
-Happy coding!
+* GIT
+  * For version control, commiting and pushing to github
+* GITPOD
+  * The IDE used to code this website
+* GITHUB
+  * Used to store repositories, files and images pushed from gitpod
+* Am I Responsive
+  * Used to test responsiveness of the website at different screen sizes
+* CHROME Developer tools
+  * For checking compatibilty, troubleshooting and editing code
+* FONTAWESOME
+  * Used for the social media links in the footer of each page
+#
+# DEPLOYMENT
+
+## REMOTE DEPLOYMENT:
+(Assuming you have already cloned or forked,)
+* This site was deployed using GitHub Pages with the following the steps:
+
+1. Click on the `Settings` icon at the top of page in the navigation bar
+2. Scroll down until you see `Github Pages`
+3. There will be a message box saying "Check it out here" Click on the link to take you to the next page
+4. Here you will be greated with a form, Choose the repository `Project-1`
+5. Choose the branch in the drop down box, in this case `MAIN`
+6. Choose the directory in the next drop down box, in this case `Root`
+7. Then click `Save`
+8. It may take a few moments for the site to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live site
+9. Another way to find the live site is to navigate to settings, on the left menu click on `pages` and this will get you to the same point.
+
+* These commands were used for version control during project:
+
+    * git add `example filename` - to add files before committing
+    * git commit -m `"example message"` - to commit changes to the local repository
+    * git push - to push all committed changes to the GitHub repository
+## HOW TO FORK A REPOSITORY:
+
+If you need to "FORK" a repository:
+
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Portfolio-1
+2. In the top right corner, click `Fork`
+3. The next page will be the forked version of https://github.com/Chr15w1986/Portfolio-1 but in your own repository
+## HOW TO CLONE A REPOSITORY:
+
+If you need to make a clone of this repository:
+
+1. Fork the repository https://github.com/Chr15w1986/Portfolio-1 using the steps above
+2. Above the file list, click `Code` (Usually green at the top right of the code window)
+3. Choose if you want to clone using HTTPS, SSH or GitHub CLI, then click the copy button to the right
+4. Open Git Bash
+5. Change the directory to where you want your clone to go (your own github)
+6. Type `git clone` and then paste the URL you copied in step 4
+7. Press `Enter` to create your clone
+
+## HOW TO MAKE A LOCAL CLONE
+
+If you need to make a local clone:
+
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Portfolio-1
+2. Under the repository name, above the list of files, click `Code`
+3. Here you will have two options, `Clone` or `Download` the repository
+4. You should close the repository using HTTPS, clicking on the icon to copy the link
+5. At this point, you can launch the `Gitpod workspace` or choose your own directory
+5. Open Git Bash
+6. Change the current working directory to the new location of where you want the cloned directory to be
+7. Type git clone and then paste the URL you copied in step 4
+8. Press Enter, to create your local clone to your chosen directory
+
+#
+
+#
+## CREDITS AND REFERENCES
+
+### IMAGES AND INFORMATION
+
+* [Inspired Bicycles](Inspiredbicycles.com) for some of the images. [Found here](testing/image-links.txt)
+* [Tribalzine](Tribalzine.com) and [Valdisolebikeland](valdisolebikeland.com) for the Rules images. [Found here](testing/image-links.txt)
+* [Wikipedia](https://en.wikipedia.org/wiki/Mountain_bike_trials) for [UCI](https://www.uci.org/) and [BIU](https://biketrial.site/) Images and information.
+* Background image and Gallery images were from multiple sources. [Found here](testing/image-links2.txt)
+* [UCI](https://www.uci.org/) and [BIU](https://biketrial.site/) Association for the use of rules on the sport of trials riding
+
+### CODE
+
+* Kevin Powell on [Youtube](https://www.youtube.com/) for CSS tutorials on GRID and FLEXBOX
+* Responsive Design course on [Youtube](https://www.youtube.com/) for responsive code in CSS
+* Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the uses of HTML and CSS
+#  
+
+## ACKNOWLEDGEMENTS:
+
+- Code institute for the Tutors on the course.
+- My Mentor [Chris Quinn](https://github.com/10xOXR) For pushing me to be different in my code.
+- Matt Bodden, for taking time out of his own studies to give his expert help and guidance with perfecting CSS.
+- My family for their support and patience.
+- Everybody on Slack for tips, advice, quick fixes and kind words.
+
+#### RETURN TO THE [TOP](#trials-world)
