@@ -104,29 +104,18 @@ Site Goals:
 * The Game consists of: 
     * One page with three large buttons and a timer
     * A heading of One Stop Clock
-* Navigation bar:
-* <img src="testing/navbar.png" width=400>
-* Footer:
-* <img src="testing/footer.png" width=400>
+    * An introduction of what the game is
+    * Rules (How to play) at the bottom of the screen
+  
 * Layout and content:
-    * The Home page will have some introductory text and 4 images, followed by an overview of the site and two videos
-    * The Rules page will have information on the rules and styles of the sport including accompanying images
-    * The Gallery will have multiple images varying scenes in the sport of trials riding
-    * The Contact page will have a form to include first name, last name, email address and a submit button
-    * The Thankyou page with have some thankyou text and a thumbs up logo
-
-* Hover effect on links and social media icons:
-    * Indicates to the user the location of the mouse whilst navigating the menu
-    * A Curved underline helps the user to know which page they are currently on
-    * <img src="testing/hover effect.png" width=400>
-
-* Contact Form:
-    * Form validation requests the user to input the correct information in the input fields,
-      This avoids the user sending illegible text/email.
-    * <img src="testing/requiredtext.png" width=400>
+    * The layout is simple and stays centered across all screen widths
+    * The text and heading are top and bottom to keep the main game area in the centre
 ## DESIGN
 * Color Scheme:
-    * With being a website that is both educational and fun, the color scheme chosen were shades of Grey. Both light, medium and dark grey were used for different elements of the site to provide a blend from background to foreground. The foreground text and images will be brighter and lighter than the background (Off white text) (See hex colours below)
+    * For the game I chose light and bright colours to keep it fun looking
+    * The color scheme chosen were Light yellow and Blue, With Dark Grey text
+    * The background image will be Light Blue in the shape of a clock
+    * The background colour is light yellow rgb(221,185,86)
     * The difference between the darker background and lighter text brings contrast to the site and a definite seperation between the two
   
 <img src="testing/lightgrey.png" width=200>
