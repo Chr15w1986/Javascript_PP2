@@ -76,24 +76,24 @@ I chose to make the game quite bright and fun looking with yellows and blues.
 #  
 #
 # UX/UI
-* This website was created to show my knowledge of HTML and CSS and to provide users with visual and educational content
-* The site should be simple to navigate
-* The sit should be easy to read, images should be clear without stretching or squashing
+* The game was created to show my knowledge of JAVASCRIPT including, HTML and CSS
+* To provide users with a game that is easy to play and fun
+* The game should be simple play
+* Any interactive buttons should clear and obvious as to what they do
 
 Site Goals:
 
-* To showcase my skills in HTML and CSS
-* To provide users with an easy to understand and easy to navigate website
-* To provide users with enough information to return to the website for projects and/or education
-* To make the site easily accessible
+* To showcase my skills in JAVASCRIPT, HTML and CSS
+* To provide users with an easy to play game
+* To provide users with rules on how to play the game
+* To make the game easily accessible
 
 ## USER STORIES
 
-* As a user, I want to easily understand the main purpose of the site
-* As a user, I want to be able to navigate the site with an easy to see and read navbar.
-* As a user, I want the site to be attractive
-* As a user, I want to be able to learn something new
-* As a user, I want to see images and videos related to the subject
+* As a user, I want to easily understand the main purpose of the game
+* As a user, I want the game to be colourful and fun
+* As a user, I want to be able to try something new
+* As a user, I want to see large buttons to play the game
 
 ## WIREFRAMES
 
