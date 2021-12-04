@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('/images/alarm-clock.png');
+    background-image: url('../images/alarm-clock.png');
     background-repeat: no-repeat;
     background-size: 450px;
     background-position: center;

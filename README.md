@@ -101,9 +101,9 @@ Site Goals:
 
 ## FEATURES
 
-* The site consists of: 
-    * 4 main pages, `HOME, RULES, GALLERY, CONTACT` and an additional `THANKYOU` page
-    * Each page will have the same body layout, `HEADER (TITLE)`, `NAVBAR`, `MAIN CONTENT (TEXT AND IMAGES)` and `FOOTER (SOCIAL MEDIA ICONS/LINKS, TERMS/SMALLPRINT)`
+* The Game consists of: 
+    * One page with three large buttons and a timer
+    * A heading of One Stop Clock
 * Navigation bar:
 * <img src="testing/navbar.png" width=400>
 * Footer:
