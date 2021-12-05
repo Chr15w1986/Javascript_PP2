@@ -65,7 +65,7 @@ p {
     background-color: rgb(221, 185, 86, 0.7);
     color: rgb(32, 30, 30);
     font-size: 180%;
-    border: solid 2px rgb(221, 185, 86,);
+    border: solid 2px rgb(221, 185, 86);
     border-radius: 20px;
     padding: 0 10px 0 10px;
     font-family: "Space mono", Raleway, sans-serif;
@@ -98,7 +98,6 @@ p {
     color: rgb(49, 49, 49);
     background-color: rgb(250, 171, 0);
     border-radius: 20px;
-    box-shadow: #000;
     text-decoration: none;
 }
 
