@@ -8,12 +8,13 @@
 * [Here is a link to the final project](https://chr15w1986.github.io/Javascript_PP2/)
 ## FINAL DESIGN
 
-![Final project image home page](testing/responsive-test.png)
+![Final project image home page](assets/testing/finaldesign.png)
 
 ## INITIAL IDEA CONCEPT
 
 My initial idea for the project was to create a game that is simple to use and competitive. The game is for all ages and skill levels.
 I chose to make the game quite bright and fun looking with yellows and blues.
+I made the game for Mobile first so that is works on all screen sizes.
 
 * The Features I wanted the game to have are:
 
@@ -21,8 +22,6 @@ I chose to make the game quite bright and fun looking with yellows and blues.
     * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
     * Have a simple layout with 3 clear buttons with corresponding colours 
     * Look fun with images, and be educational
-
-#  
 #  
 ## CONTENTS
 
@@ -32,24 +31,18 @@ I chose to make the game quite bright and fun looking with yellows and blues.
   - [FINAL DESIGN](#final-design)
   - [INITIAL IDEA CONCEPT](#initial-idea-concept)
 - [](#)
-- [](#-1)
   - [CONTENTS](#contents)
-- [](#-2)
 - [UX/UI](#uxui)
   - [USER STORIES](#user-stories)
   - [WIREFRAMES](#wireframes)
   - [FEATURES](#features)
   - [DESIGN](#design)
-- [](#-3)
+- [](#-1)
 - [TESTING](#testing)
   - [DEVICES](#devices)
   - [Validators](#validators)
   - [Lighthouse](#lighthouse)
-  - [Home](#home)
-  - [Rules](#rules)
-  - [Gallery](#gallery)
-  - [Contact](#contact)
-  - [Thankyou](#thankyou)
+  - [Game](#game)
   - [Accessibility](#accessibility)
   - [SOLVED BUGS AND ERRORS](#solved-bugs-and-errors)
   - [UNSOLVED BUGS OR ERRORS](#unsolved-bugs-or-errors)
@@ -64,7 +57,6 @@ I chose to make the game quite bright and fun looking with yellows and blues.
   - [CREDITS AND REFERENCES](#credits-and-references)
     - [IMAGES AND INFORMATION](#images-and-information)
     - [CODE](#code)
-- [](#-4)
   - [ACKNOWLEDGEMENTS:](#acknowledgements)
       - [RETURN TO THE TOP](#return-to-the-top)
 
@@ -73,7 +65,6 @@ I chose to make the game quite bright and fun looking with yellows and blues.
   * [CODE](#code)
 - [ACKNOWLEDGEMENTS](#acknowledgements)
 
-#  
 #
 # UX/UI
 * The game was created to show my knowledge of JAVASCRIPT including, HTML and CSS
@@ -113,100 +104,70 @@ Site Goals:
 ## DESIGN
 * Color Scheme:
     * For the game I chose light and bright colours to keep it fun looking
-    * The color scheme chosen were Light yellow and Blue, With Dark Grey text
-    * The background image will be Light Blue in the shape of a clock
+    * The color scheme chosen were Light yellow and Blue, With Dark Grey text rgb(32, 30, 30)
+    * The background image will be Light Blue in the shape of a clock rgb(63,72,204)
     * The background colour is light yellow rgb(221,185,86)
-    * The difference between the darker background and lighter text brings contrast to the site and a definite seperation between the two
   
-<img src="testing/lightgrey.png" width=200>
-<img src="testing/mediumgrey.png" width=200>
-<img src="testing/darkgrey.png" width=200>
+<img src="assets/testing/Bluecolour.png" width=200>
+<img src="assets/testing/Greycolour.png" width=200>
+<img src="assets/testing/Yellowcolour.png" width=200>
 
 
 * IMAGES
-    * I sourced several images for the home page, rules page and gallery
-    * There are a total of 15 images across the site, including one for the background image
-    * All images have been compressed through `Tinypng.com`
-    * None of the images used have been pushed past the pixel limit in order to prevent image distortion
+    * There is one background image, a silouhette of a clock.
+    * The image has been compressed through `Tinypng.com`
+    * The image used has not been pushed past the pixel limit in order to prevent image distortion
 
 * TYPOGRAPHY
-    * The fonts used for my website is "Gemunu Libre" and "Monserrat". The font is imported from Google Fonts
+    * The fonts used for my website is "Raleway" and "Space-mono". The font is imported from Google Fonts
 
 # 
 
 # TESTING
 
-* The site has been tested through multiple tests on each individual page.
-
-* `As a user, I want to easily understand the main purpose of the site`:
-    * Upon loading the home page, you will be greeted with a short paragraph about the sites context, "Lets get back to basics" followed by four Trials related images
-* `As a user, I want to be able to navigate the site with an easy to see and read navbar`:
-    * This was fulfilled with clear to read wording, only four links with an underline for the page currently viewing
-* `As a user, I want the site to be attractive`:
-    * Made sure the visual effects, links, wording and images are appealing to the eye with the use of different shades of the same colour with brighter images and text
-* `As a user, I want to be able to learn something new`:
-    * I included multiple images accompanied with text related to each style of the sport and the rules around the sport
-* `As a user, I want to see images and videos related to the subject`
-    * I included a `Gallery` section (the 3rd nav link from the left) which includes multiple varied images
-    * On the `Home` page, I included four small images that spread across the page, and two youtube videos at the bottom of the page
-    * As above, there are images accompanying each paragraph in the `Rules` page
+* `As a user, I want to easily understand the main purpose of the game`:
+    * Upon loading the Game, you will see a large blue clock on a yellow background, with three buttons, START, STOP AND RESET and the rules of the game. `Fulfilled.`
+* `As a user, I want the game to be colourful and fun`:
+    *  I used bright colours, simple traffic light colours for stop start and reset. `Fulfilled.`
+* `As a user, I want to be able to try something new`:
+    * The concept of the game (although simple) is exciting and different, enough to keep the user trying over and over to reach the best score he/she them/they can. `Fulfilled.`
+* `As a user, I want to see large buttons to play the game`:
+    * I included three large and easy to read buttons with accompanying colours to differentiate between them. `Fulfilled.`
 ## DEVICES
 * I have tested responsiveness and functionality on the following devices and browsers:
     * Android:
       * Samsung S20 FE
-      * Samsung A10
       * Samsung S10
       * Samsung Galaxy Tab A
     * Apple:
-      * Ipad mini
       * Iphone 6s
-      * Iphone XS
+      * Iphone 8
       * Iphone 11
     * Desktops/laptops:
       * Dell XPS15 9570 Laptop
       * HP Pavillion Laptop
-      * Lenovo Thinkpad
     * Browsers:
       * Chrome
       * Edge
       * Firefox
       * Safari
-      * Samsung internet
-
-
 ## Validators
 
-* I ran all of my code through css-validator and html-validator, and I was given multiple errors of `grid-area-templates` and `misplaced end tag`
-* I have since corrected these errors and run the validators again and have found no errors. [CSS screenshot](testing/css-no-errors.png) and [HTML screenshot](testing/html-no-errors.png)
-* There we also 5 warnings that still exist in CSS code. Although they are imported style sheets and vendor extensions which are needed for my code to work. [Warnings found here](testing/css-warnings.png)
-
-* See [HERE](https://jigsaw.w3.org/css-validator/validator?uri=chr15w1986.github.io%2FPortfolio-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) for the full report on CSS Validator
-* See [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchr15w1986.github.io%2FPortfolio-1%2Findex.html) for the home page report on HTML Validator
-
+* I ran all of my code through css-validator and html-validator, No errors found
+* I ran all of my Javascript code through JSHint, No errors found
+* See [HERE](assets/testing/JSHint.png) for JSHint Report
+* See [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) for the ONE STOP CLOCK report on CSS Validator
+* See [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F) for the ONE STOP CLOCK report on HTML Validator
 ## Lighthouse
 
-* I ran each page live through Chrome Lighthouse and received the following results with an average of 96.2% across the site
-
-## Home
-![homepage](/testing/home.png)
-
-## Rules
-![rulespage](/testing/rules.png)
-
-## Gallery
-![gallerypage](/testing/gallery.png)
-
-## Contact
-![contactpage](/testing/contact.png)
-
-## Thankyou
-![thankyoupage](/testing/thankyou.png)
-
+* I ran the game live through Chrome Lighthouse and received the following results with an average of 98% for Performance, Accessibility and Best practices.
+![REPORT](assets/testing/lighthouse.png)
+## Game
+![ONE STOP CLOCK](/testing/home.png)
 ## Accessibility
 
-* Each page has been through wave.webaim.org for accessibility testing.
-    * Found here: [Full Report](https://wave.webaim.org/report#/https://chr15w1986.github.io/Portfolio-1/index.html)
-
+* The game has been run through wave.webaim.org for accessibility testing.
+    * Found here: [Full Report](https://wave.webaim.org/report#/https://chr15w1986.github.io/Javascript_PP2/)
 ## SOLVED BUGS AND ERRORS
 
 * I noticed a bug on each page that was identified as a lack of `max-width` on the `body` element, I have since set this to `1920px`
@@ -218,19 +179,16 @@ Site Goals:
 * Any duplicate or unused selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
 * On Apple Safari Browser and Samsung Internet the `HERE` link appeared black or darker, but stayed white on chrome. Solved the issue on Safari by targeting the link directly and setting the colour to an off shade of white `#d6d4d4` rather than `inherit` to keep consistency throughout the page. This issue still exists on Samsung internet. The cause is `light-mode` and `dark-mode` settings on samsung phones which inverts colours, and not the code itself
-
 ## UNSOLVED BUGS OR ERRORS
 * The navbar `contact` link overflows as the screen gets below 270px wide
 * The `central images` on the home screen overflow on the right side of the screen below 270px wide
 * The two `Youtube videos` overflow (stop being responsive) when the screen width is below 270px wide
-
 ## FUNCTIONALITY
 * All links have been hovered over and clicked on to ensure accessibility
 * Pages all load correctly on all device screen sizes
 * All Social media links work correctly and open on a new tab
 * All images load on each page as intended
 #
-
 # TECHNOLOGIES USED
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
@@ -251,7 +209,6 @@ Site Goals:
   * Used for the social media links in the footer of each page
 #
 # DEPLOYMENT
-
 ## REMOTE DEPLOYMENT:
 (Assuming you have already cloned or forked,)
 * This site was deployed using GitHub Pages with the following the steps:
@@ -305,8 +262,6 @@ If you need to make a local clone:
 8. Press Enter, to create your local clone to your chosen directory
 
 #
-
-#
 ## CREDITS AND REFERENCES
 
 ### IMAGES AND INFORMATION
@@ -322,8 +277,7 @@ If you need to make a local clone:
 * Kevin Powell on [Youtube](https://www.youtube.com/) for CSS tutorials on GRID and FLEXBOX
 * Responsive Design course on [Youtube](https://www.youtube.com/) for responsive code in CSS
 * Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the uses of HTML and CSS
-#  
-
+#
 ## ACKNOWLEDGEMENTS:
 
 - Code institute for the Tutors on the course.
