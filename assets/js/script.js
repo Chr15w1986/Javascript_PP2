@@ -3,6 +3,7 @@
 // Countdown timer functions:
 let counter;
 let timer = 5000;
+// Stack over flow fix to get milliseconds to work correctly.
 const throttleAmount = 4;
 
 function countdown(secs) {
@@ -13,7 +14,6 @@ function countdown(secs) {
         }
 
         // Stack over flow fix to get milliseconds to work correctly.
-        // timer = timer - throttleAmount;
         timer -= throttleAmount;
         document.getElementById("milliseconds").innerHTML = `${timer}ms`;
     }, throttleAmount); //do this every 4 milliseconds
@@ -23,20 +23,22 @@ function countdown(secs) {
 // Start timer:
 document.getElementById("start").addEventListener("click", function () {
     countdown(timer); //this runs countdown with the current value of timer
-    console.log("start")
 });
 
 // Stop timer:
 document.getElementById("stop").addEventListener("click", function () {
     clearInterval(counter); //stops the timer
     if (timer <= 200) {
-        alert("YOU WIN!!")
+        alert("YOU WIN!!");
+    } else {
+        if (timer >= 4 ) {
+            alert("YOU LOSE!!");
+        }
     }
 });
 
 // Reset game:
 document.getElementById("reset").addEventListener("click", function () {
     clearInterval(counter);
-    countdown(5000); // puts the timer to 5000ms and counts down. 
-    console.log(reset)
+    countdown(5000); // puts the timer to 5000ms and starts counting down. 
 });
