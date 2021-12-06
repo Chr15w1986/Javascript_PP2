@@ -24,13 +24,6 @@ I made the game for Mobile first so that is works on all screen sizes.
 #  
 ## CONTENTS
 
-- [PORTFOLIO PROJECT - 2](#portfolio-project---2)
-- [ONE STOP CLOCK](#one-stop-clock)
-  - [PURPOSE](#purpose)
-  - [FINAL DESIGN](#final-design)
-  - [INITIAL IDEA CONCEPT](#initial-idea-concept)
-- [](#)
-  - [CONTENTS](#contents)
 - [UX/UI](#uxui)
   - [USER STORIES](#user-stories)
   - [WIREFRAMES](#wireframes)
