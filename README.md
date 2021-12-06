@@ -20,8 +20,7 @@ I made the game for Mobile first so that is works on all screen sizes.
 
     * To have simple to read rules.
     * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
-    * Have a simple layout with 3 clear buttons with corresponding colours 
-    * Look fun with images, and be educational
+    * Have a simple layout with 3 clear buttons with corresponding colours
 #  
 ## CONTENTS
 
@@ -51,11 +50,12 @@ I made the game for Mobile first so that is works on all screen sizes.
   - [PROGRAMS USED](#programs-used)
 - [DEPLOYMENT](#deployment)
   - [REMOTE DEPLOYMENT:](#remote-deployment)
+  - [HOW TO CREATE A BRANCH/TAG OF MAIN:](#how-to-create-a-branchtag-of-main)
   - [HOW TO FORK A REPOSITORY:](#how-to-fork-a-repository)
   - [HOW TO CLONE A REPOSITORY:](#how-to-clone-a-repository)
   - [HOW TO MAKE A LOCAL CLONE](#how-to-make-a-local-clone)
   - [CREDITS AND REFERENCES](#credits-and-references)
-    - [IMAGES AND INFORMATION](#images-and-information)
+    - [IMAGE](#image)
     - [CODE](#code)
   - [ACKNOWLEDGEMENTS:](#acknowledgements)
       - [RETURN TO THE TOP](#return-to-the-top)
@@ -69,7 +69,7 @@ I made the game for Mobile first so that is works on all screen sizes.
 # UX/UI
 * The game was created to show my knowledge of JAVASCRIPT including, HTML and CSS
 * To provide users with a game that is easy to play and fun
-* The game should be simple play
+* The game should be simple to play
 * Any interactive buttons should clear and obvious as to what they do
 
 Site Goals:
@@ -84,7 +84,7 @@ Site Goals:
 * As a user, I want to easily understand the main purpose of the game
 * As a user, I want the game to be colourful and fun
 * As a user, I want to be able to try something new
-* As a user, I want to see large buttons to play the game
+* As a user, I want to see obvious and clear buttons to play the game
 
 ## WIREFRAMES
 
@@ -126,13 +126,13 @@ Site Goals:
 # TESTING
 
 * `As a user, I want to easily understand the main purpose of the game`:
-    * Upon loading the Game, you will see a large blue clock on a yellow background, with three buttons, START, STOP AND RESET and the rules of the game. `Fulfilled.`
+    * Upon loading the Game, you will see a large blue clock on a yellow background, with three buttons, START, STOP AND RESET and the rules of the game. Outcome: `Fulfilled.`
 * `As a user, I want the game to be colourful and fun`:
-    *  I used bright colours, simple traffic light colours for stop start and reset. `Fulfilled.`
+    *  I used bright colours, simple traffic light colours for stop start and reset. Outcome: `Fulfilled.`
 * `As a user, I want to be able to try something new`:
     * The concept of the game (although simple) is exciting and different, enough to keep the user trying over and over to reach the best score he/she them/they can. `Fulfilled.`
-* `As a user, I want to see large buttons to play the game`:
-    * I included three large and easy to read buttons with accompanying colours to differentiate between them. `Fulfilled.`
+* `As a user, I want to see obvious and clear buttons to play the game`:
+    * I included three large and easy to read buttons with accompanying colours to differentiate between them. Outcome: `Fulfilled.`
 ## DEVICES
 * I have tested responsiveness and functionality on the following devices and browsers:
     * Android:
@@ -170,76 +170,86 @@ Site Goals:
     * Found here: [Full Report](https://wave.webaim.org/report#/https://chr15w1986.github.io/Javascript_PP2/)
 ## SOLVED BUGS AND ERRORS
 
-* I noticed a bug on each page that was identified as a lack of `max-width` on the `body` element, I have since set this to `1920px`
-* Youtube videos on the home page would overlap at screen widths smaller than `650px`. This was cured with the use of `position:relative` and `position:absolute`
-* The `navbar` would always "hang" to the left until media queries kicked in at 440px, at which point the would centre align and stack. This was cured by the use of `display:grid`. Now they are inline, centred and responsive
-* Once the form on the contact page was filled in and the `GO!` button pressed, I wanted the next page to be a `Thankyou for contacting us` page. This didnt seem to work. The `form method="POST"` attribute that I was using seem to be the culprit, This has now been changed to `form method="GET"` and it now works fine
-* On the `Thankyou for contacting us` page, the `Return to Home` button didnt work the way I wanted it to, this was solved by wrapping the `input` element in a `form` element and giving the form a `method="GET"`
-* The four images on the main page were unresponsive, they either stacked or overlapped at any screen size below around 800px. This was sorted by setting up a `grid`. This then gave me the control to move the images where I wanted them at multiple screen widths
+* A bug was found when the start button was pressed and then pressed again, it would multiply the countdown speed by two and continue counting down past 0ms infinitely. 
+* The stop button, although it stopped the timer, if the start button was pressed, the timer would deduct 4ms and then count past the 0ms into minus figures.
+* The timer itself wouldnt show upon loading the page until the start button had been pressed and the timer started counting down.
+* 
 * Any duplicate or unused selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
-* On Apple Safari Browser and Samsung Internet the `HERE` link appeared black or darker, but stayed white on chrome. Solved the issue on Safari by targeting the link directly and setting the colour to an off shade of white `#d6d4d4` rather than `inherit` to keep consistency throughout the page. This issue still exists on Samsung internet. The cause is `light-mode` and `dark-mode` settings on samsung phones which inverts colours, and not the code itself
+
 ## UNSOLVED BUGS OR ERRORS
 * The navbar `contact` link overflows as the screen gets below 270px wide
 * The `central images` on the home screen overflow on the right side of the screen below 270px wide
 * The two `Youtube videos` overflow (stop being responsive) when the screen width is below 270px wide
 ## FUNCTIONALITY
-* All links have been hovered over and clicked on to ensure accessibility
-* Pages all load correctly on all device screen sizes
-* All Social media links work correctly and open on a new tab
-* All images load on each page as intended
+* All buttons have been clicked on to ensure correct function
+* The game loads correctly on all device screen sizes
+* The image loads on the background as intended on all screen sizes
 #
 # TECHNOLOGIES USED
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
 * [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
+* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
 ## PROGRAMS USED
 
 * GIT
   * For version control, commiting and pushing to github
 * GITPOD
-  * The IDE used to code this website
+  * The IDE used to code the game
 * GITHUB
   * Used to store repositories, files and images pushed from gitpod
 * Am I Responsive
-  * Used to test responsiveness of the website at different screen sizes
+  * Used to test responsiveness of the game at different screen sizes
 * CHROME Developer tools
   * For checking compatibilty, troubleshooting and editing code
-* FONTAWESOME
-  * Used for the social media links in the footer of each page
 #
 # DEPLOYMENT
 ## REMOTE DEPLOYMENT:
 (Assuming you have already cloned or forked,)
-* This site was deployed using GitHub Pages with the following the steps:
+* This Game was deployed using GitHub Pages with the following the steps:
 
 1. Click on the `Settings` icon at the top of page in the navigation bar
 2. Scroll down until you see `Github Pages`
 3. There will be a message box saying "Check it out here" Click on the link to take you to the next page
-4. Here you will be greated with a form, Choose the repository `Project-1`
+4. Here you will be greated with a form, Choose the repository `Javascript_PP2`
 5. Choose the branch in the drop down box, in this case `MAIN`
 6. Choose the directory in the next drop down box, in this case `Root`
 7. Then click `Save`
-8. It may take a few moments for the site to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live site
-9. Another way to find the live site is to navigate to settings, on the left menu click on `pages` and this will get you to the same point.
+8. It may take a few moments for the game to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live page
+9. Another way to find the live page is to navigate to settings, on the left menu click on `pages` and this will get you to the same point.
 
 * These commands were used for version control during project:
 
     * git add `example filename` - to add files before committing
     * git commit -m `"example message"` - to commit changes to the local repository
     * git push - to push all committed changes to the GitHub repository
+    * git branch - to see which branch currently working on
+    * git pull - to pull all code into main branch once the feature branch had been merged and deleted
+
+## HOW TO CREATE A BRANCH/TAG OF MAIN:
+
+If you need to "BRANCH" off of the main repository:
+
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Javascript_PP2
+2. On the left side of the screen underneath the nav links, click the drop down box `Main`
+3. Inside the box you will see `Create new branch/tag`
+4. Inside the text box, enter the new branch or tag name i.e `Features`
+5. Below the Branches Tags tab, you will see `Create branch: Features from "main"`
+6. Click on `Create branch: Features from "main"` and you will be taken to the new branch page you just called `Features`
+
 ## HOW TO FORK A REPOSITORY:
 
 If you need to "FORK" a repository:
 
-1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Portfolio-1
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Javascript_PP2
 2. In the top right corner, click `Fork`
-3. The next page will be the forked version of https://github.com/Chr15w1986/Portfolio-1 but in your own repository
+3. The next page will be the forked version of https://github.com/Chr15w1986/Javascript_PP2 but in your own repository
 ## HOW TO CLONE A REPOSITORY:
 
 If you need to make a clone of this repository:
 
-1. Fork the repository https://github.com/Chr15w1986/Portfolio-1 using the steps above
+1. Fork the repository https://github.com/Chr15w1986/Javascript_PP2 using the steps above
 2. Above the file list, click `Code` (Usually green at the top right of the code window)
 3. Choose if you want to clone using HTTPS, SSH or GitHub CLI, then click the copy button to the right
 4. Open Git Bash
@@ -251,7 +261,7 @@ If you need to make a clone of this repository:
 
 If you need to make a local clone:
 
-1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Portfolio-1
+1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Javascript_PP2
 2. Under the repository name, above the list of files, click `Code`
 3. Here you will have two options, `Clone` or `Download` the repository
 4. You should close the repository using HTTPS, clicking on the icon to copy the link
@@ -264,26 +274,21 @@ If you need to make a local clone:
 #
 ## CREDITS AND REFERENCES
 
-### IMAGES AND INFORMATION
+### IMAGE
 
-* [Inspired Bicycles](Inspiredbicycles.com) for some of the images. [Found here](testing/image-links.txt)
-* [Tribalzine](Tribalzine.com) and [Valdisolebikeland](valdisolebikeland.com) for the Rules images. [Found here](testing/image-links.txt)
-* [Wikipedia](https://en.wikipedia.org/wiki/Mountain_bike_trials) for [UCI](https://www.uci.org/) and [BIU](https://biketrial.site/) Images and information.
-* Background image and Gallery images were from multiple sources. [Found here](testing/image-links2.txt)
-* [UCI](https://www.uci.org/) and [BIU](https://biketrial.site/) Association for the use of rules on the sport of trials riding
+* Background image, Silhouette of a Clock was taken from [Pixabay](https://pixabay.com/fi/illustrations/her%c3%a4tyskello-siluetti-kello-musta-2806057/)
 
 ### CODE
 
-* Kevin Powell on [Youtube](https://www.youtube.com/) for CSS tutorials on GRID and FLEXBOX
-* Responsive Design course on [Youtube](https://www.youtube.com/) for responsive code in CSS
-* Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the uses of HTML and CSS
+* [Stackoverflow](https://stackoverflow.com/) For a couple of code snippets to get my code to work
+* Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT.
 #
 ## ACKNOWLEDGEMENTS:
 
 - Code institute for the Tutors on the course.
-- My Mentor [Chris Quinn](https://github.com/10xOXR) For pushing me to be different in my code.
-- Matt Bodden, for taking time out of his own studies to give his expert help and guidance with perfecting CSS.
+- My Mentor [Ben Kavanagh](https://github.com/BAK2K3) for his brilliant advice on my code, whether it is right or wrong, excellent way with words and constantly believing in me.
+- Dave Horrocks, for taking time out of his own studies, for his excellent teaching style and expertise on all things javascript.
 - My family for their support and patience.
 - Everybody on Slack for tips, advice, quick fixes and kind words.
 
-#### RETURN TO THE [TOP](#trials-world)
+#### RETURN TO THE [TOP](#one-stop-clock)
