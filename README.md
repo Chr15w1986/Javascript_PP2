@@ -20,7 +20,7 @@ I made the game for Mobile first so that is works on all screen sizes.
 
     * To have simple to read rules.
     * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
-    * Have a simple layout with 3 clear buttons with corresponding colours
+    * Have a simple layout with 2 clear buttons with corresponding colours
 #  
 ## CONTENTS
 
@@ -86,7 +86,8 @@ Site Goals:
 ## FEATURES
 
 * The Game consists of: 
-    * One page with three large buttons and a timer
+    * One page with two large buttons and a timer
+    * The Start button, once clicked, changes to Stop for UX purposes 
     * A heading of One Stop Clock
     * An introduction of what the game is
     * Rules (How to play) at the bottom of the screen
@@ -100,10 +101,14 @@ Site Goals:
     * The color scheme chosen were Light yellow and Blue, With Dark Grey text rgb(32, 30, 30)
     * The background image will be Light Blue in the shape of a clock rgb(63,72,204)
     * The background colour is light yellow rgb(221,185,86)
+    * The button colours are a traffic light system with Red (STOP), Green (START) and Amber/Orange (RESET)
   
 <img src="assets/testing/Bluecolour.png" width=200>
 <img src="assets/testing/Greycolour.png" width=200>
-<img src="assets/testing/Yellowcolour.png" width=200>
+<img src="assets/testing/Yellowcolour.png" width=200><br>
+<img src="assets/testing/START.png" width=200>
+<img src="assets/testing/STOP.png" width=200>
+<img src="assets/testing/reset.png" width=200>
 
 
 * IMAGES
@@ -125,7 +130,7 @@ Site Goals:
 * `As a user, I want to be able to try something new`:
     * The concept of the game (although simple) is exciting and different, enough to keep the user trying over and over to reach the best score he/she them/they can. `Fulfilled.`
 * `As a user, I want to see obvious and clear buttons to play the game`:
-    * I included three large and easy to read buttons with accompanying colours to differentiate between them. Outcome: `Fulfilled.`
+    * I included two large and easy to read buttons with accompanying colours to differentiate between them. Outcome: `Fulfilled.`
 ## DEVICES
 * I have tested responsiveness and functionality on the following devices and browsers:
     * Android:
