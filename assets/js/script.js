@@ -20,13 +20,29 @@ function startCountdown(timer) {
     }, throttleAmount);
 }
 
+// Start timer:
+document.getElementById("start").addEventListener("click", function () {
+
+    // This runs countdown with the current value of timer
+    startCountdown(timer);
+
+    // Add/Remove Hidden Class from HTML Elements
+    document.getElementById("start").classList.add("hidden");
+    document.getElementById("stop").classList.remove("hidden");
+
+});
+
 // Stop timer:
 document.getElementById("stop").addEventListener("click", function () {
     clearInterval(counter); //stops the timer
+
+    // Add/Remove Hidden Class from HTML Elements
+    document.getElementById("start").classList.add("hidden");
+    document.getElementById("stop").classList.remove("hidden");
+
     if (timer <= 200) {
         alert("YOU WIN!!");
-    }
-    if (timer = 0) {
+    } else if (timer = 0) {
         alert("YOU LOSE!!")
     } else {
         if (timer >= 4) {
