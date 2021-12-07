@@ -1,8 +1,8 @@
 // lowest possible DOM handling for milliseconds is 4ms.
 
 // Countdown timer functions:
-let counter;
-let timer = 5000;
+let counter = null;
+const timer = 5000;
 // Stack over flow fix to get milliseconds to work correctly.
 const throttleAmount = 4;
 
