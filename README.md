@@ -171,7 +171,7 @@ Site Goals:
 * A bug was found when the start button was pressed and then pressed again, it would multiply the countdown speed by two and continue counting down past 0ms infinitely. 
 * The stop button, although it stopped the timer, if the start button was pressed, the timer would deduct 4ms and then count past the 0ms into minus figures.
 * The timer itself wouldnt show upon loading the page until the start button had been pressed and the timer started counting down.
-* 
+* There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5. I cured this by creating a variable of throttleAmount and setting it to 4ms.
 * Any duplicate or unused selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
 
