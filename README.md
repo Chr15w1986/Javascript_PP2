@@ -62,7 +62,7 @@ I made the game for Mobile first so that is works on all screen sizes.
 # UX/UI
 * The game was created to show my knowledge of JAVASCRIPT including, HTML and CSS
 * To provide users with a game that is easy to play and fun
-* The game should be simple to play
+* The user is able to interact with 2/3 clear buttons to play the game
 * Any interactive buttons should clear and obvious as to what they do
 
 Site Goals:
@@ -87,10 +87,18 @@ Site Goals:
 
 * The Game consists of: 
     * One page with two large buttons and a timer
-    * The Start button, once clicked, changes to Stop for UX purposes 
+    * The Start button, once clicked, changes to Stop for to provide a user friendly experience 
     * A heading of One Stop Clock
-    * An introduction of what the game is
+    * An introduction of what the game consists of
     * Rules (How to play) at the bottom of the screen
+
+* Future features:
+    * I would add a highest score `Scoreboard` for competitions
+    * Add an option for the user to set their own timer `Value`
+    * Add an option for the user to set different difficulty levels, 
+        * I.e The speed the timer reduces by,
+        * The timer becomes easier or harder to see by adjusting the transparency level,
+        * An option to stop the timer at a randomly set time rather than zero
   
 * Layout and content:
     * The layout is simple and stays centered across all screen widths
@@ -112,7 +120,7 @@ Site Goals:
 
 
 * IMAGES
-    * There is one background image, a silouhette of a clock.
+    * There is one background image, a silhouette of a clock.
     * The image has been compressed through `Tinypng.com`
     * The image used has not been pushed past the pixel limit in order to prevent image distortion
 
@@ -176,9 +184,7 @@ Site Goals:
 * Any irrelevant space in between code has been removed
 
 ## UNSOLVED BUGS OR ERRORS
-* The navbar `contact` link overflows as the screen gets below 270px wide
-* The `central images` on the home screen overflow on the right side of the screen below 270px wide
-* The two `Youtube videos` overflow (stop being responsive) when the screen width is below 270px wide
+
 ## FUNCTIONALITY
 * All buttons have been clicked on to ensure correct function
 * The game loads correctly on all device screen sizes
@@ -278,7 +284,7 @@ If you need to make a local clone:
 
 ### CODE
 
-* [Stackoverflow](https://stackoverflow.com/) For a couple of code snippets to get my code to work
+* [Stackoverflow](https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) For milliseconds throttle amount code
 * Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT.
 #
 ## ACKNOWLEDGEMENTS:
