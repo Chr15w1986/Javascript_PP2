@@ -1,20 +1,19 @@
-// Countdown timer functions:
+//Global variables
 let counter = null;
 const timer = 5000;
 
-// Stack over flow fix to get milliseconds to work correctly,(https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) 
+// Stack over flow fix to get milliseconds to work correctly, 
 // lowest possible DOM handling for milliseconds is 4ms.
 const throttleAmount = 4;
 
 document.getElementById("milliseconds").innerHTML = `${timer}ms`;
-
 
 // Function for starting the timer
 function startCountdown(timer) {
     let secs = timer;
     counter = setInterval(function () {
 
-        // this reduces the timer by throttle amount of 4ms
+        // This reduces the timer by throttle amount of 4ms
         secs -= throttleAmount;
         document.getElementById("milliseconds").innerHTML = `${secs}ms`;
         // Reduces the opacity of the timer the closer it gets to zero
@@ -34,7 +33,7 @@ function stopCountdown(timer) {
     document.getElementById("milliseconds").style.color = `rgba(32, 30, 30, 1)`;
 }
 
-// Function for calculating win or lose
+// Function for calculating win lose
 function calculateTime() {
 
     let win = null;
@@ -61,7 +60,7 @@ function calculateTime() {
     }
 }
 
-////////////////// Event listener declarations
+//////////// Event listener declarations
 
 // Start timer:
 document.getElementById("start").addEventListener("click", function () {
