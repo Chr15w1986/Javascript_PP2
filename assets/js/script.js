@@ -2,11 +2,14 @@
 let counter = null;
 const timer = 5000;
 
-// Stack over flow fix to get milliseconds to work correctly, lowest possible DOM handling for milliseconds is 4ms.
+// Stack over flow fix to get milliseconds to work correctly,(https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) 
+// lowest possible DOM handling for milliseconds is 4ms.
 const throttleAmount = 4;
 
 document.getElementById("milliseconds").innerHTML = `${timer}ms`;
 
+
+// Function for starting the timer
 function startCountdown(timer) {
     let secs = timer;
     counter = setInterval(function () {
@@ -18,6 +21,17 @@ function startCountdown(timer) {
         document.getElementById("milliseconds").style.color = `rgba(32, 30, 30, ${(secs/timer)}`;
 
     }, throttleAmount);
+}
+
+// Function for stopping the timer
+function stopCountdown(timer) {
+
+    // Stops countdown
+    clearInterval(counter);
+
+    // Resets HTML
+    document.getElementById("milliseconds").innerHTML = `${timer}ms`;
+    document.getElementById("milliseconds").style.color = `rgba(32, 30, 30, 1)`;
 }
 
 // Start timer:
@@ -40,15 +54,12 @@ document.getElementById("stop").addEventListener("click", function () {
     document.getElementById("start").classList.add("hidden");
     document.getElementById("stop").classList.remove("hidden");
 
-    if (timer <= 200) {
-        alert("YOU WIN!!");
-    } else if (timer = 0) {
-        alert("YOU LOSE!!")
-    } else {
-        if (timer >= 4) {
-            alert("YOU LOSE!!");
-        }
-    }
+    // Determine if win or lose
+    calculateTime();
+
+    // This runs countdown with the current value of timer
+    stopCountdown(timer);
+
 });
 
 // Reset game:
