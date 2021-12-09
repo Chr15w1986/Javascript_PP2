@@ -18,7 +18,7 @@ function startCountdown(timer) {
         secs -= throttleAmount;
         document.getElementById("milliseconds").innerHTML = `${secs}ms`;
         // Reduces the opacity of the timer the closer it gets to zero
-        document.getElementById("milliseconds").style.color = `rgba(32, 30, 30, ${(secs/timer)}`;
+        document.getElementById("milliseconds").style.color = `rgba(32, 30, 30, ${(secs/timer*2)}`;
 
     }, throttleAmount);
 }
@@ -54,9 +54,9 @@ function calculateTime() {
     // Alert for the user to know how much they have won by
     if (win) {
         alert(`YOU WIN!! You were within ${offset} milliseconds!`);
-    } else if (offset > 300) {
+    } else if (offset > 0) {
         alert(`Oops, you were ${offset} milliseconds too fast!`);
-    } else if (offset < 300) {
+    } else if (offset < 0) {
         alert(`Oh no, you were ${offset} milliseconds too slow!`);
     }
 }
