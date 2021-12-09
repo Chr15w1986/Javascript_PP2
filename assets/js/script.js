@@ -68,7 +68,6 @@ document.getElementById("start").addEventListener("click", function () {
 
 // Stop timer:
 document.getElementById("stop").addEventListener("click", function () {
-    clearInterval(counter); //stops the timer
 
     // Add/Remove Hidden Class from HTML Elements
     document.getElementById("stop").classList.add("hidden");
