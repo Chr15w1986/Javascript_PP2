@@ -50,6 +50,15 @@ function calculateTime() {
     } else {
         win = true;
     }
+
+    // Alert for the user to know how much they have won by
+    if (win) {
+        alert(`YOU WIN!! You were within ${offset} milliseconds!`);
+    } else if (offset > 300) {
+        alert(`Oops, you were ${offset} milliseconds too fast!`);
+    } else if (offset < 300) {
+        alert(`Oh no, you were ${offset} milliseconds too slow!`);
+    }
 }
 
 ////////////////// Event listener declarations
