@@ -49,6 +49,8 @@ function calculateTime() {
     }
 }
 
+////////////////// Event listener declarations
+
 // Start timer:
 document.getElementById("start").addEventListener("click", function () {
 
@@ -66,8 +68,8 @@ document.getElementById("stop").addEventListener("click", function () {
     clearInterval(counter); //stops the timer
 
     // Add/Remove Hidden Class from HTML Elements
-    document.getElementById("start").classList.add("hidden");
-    document.getElementById("stop").classList.remove("hidden");
+    document.getElementById("stop").classList.add("hidden");
+    document.getElementById("start").classList.remove("hidden");
 
     // Determine if win or lose
     calculateTime();
