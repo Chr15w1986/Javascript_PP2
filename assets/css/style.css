@@ -15,7 +15,7 @@ body {
     background-color: rgb(221,185,86);
     font-family: "Space mono", sans-serif;
     padding: 0 5px 0 5px;
-    margin-top: 1em;
+    margin-top: 5em;
 }
 
 /* Icon and text styling */
@@ -124,4 +124,10 @@ button {
 
 .hidden {
     display: none;
+}
+
+@media screen and (min-width: 480px){
+    body{
+    margin-top: 10em;
+    }
 }
