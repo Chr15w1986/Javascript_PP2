@@ -42,10 +42,10 @@ function calculateTime() {
     // Obtain millisecond value from timer
     let offset = parseInt(document.getElementById("milliseconds").innerHTML.slice(0, -2));
 
-    // Calculate if within 200 seconds of reaching 0
-    if (offset > 200) {
+    // Calculate if within 300 milliseconds of reaching 0
+    if (offset > 300) {
         win = false;
-    } else if (offset < -200) {
+    } else if (offset < -300) {
         win = false;
     } else {
         win = true;
