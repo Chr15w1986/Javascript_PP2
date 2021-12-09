@@ -81,6 +81,10 @@ document.getElementById("stop").addEventListener("click", function () {
 
 // Reset game:
 document.getElementById("reset").addEventListener("click", function () {
-    clearInterval(counter);
-    countdown(5000); // puts the timer to 5000ms and starts counting down. 
+
+    startCountdown(timer);
+
+    // Add/Remove Hidden Class from HTML Elements
+    document.getElementById("stop").classList.add("hidden");
+    document.getElementById("start").classList.remove("hidden");
 });
