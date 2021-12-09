@@ -5,7 +5,7 @@
 ## PURPOSE
 
 'One Stop Clock' is a game where your reaction timing is key. Test your reactions by trying to get the timer as close to zero as possible with the use of the three buttons, Start, Stop and Reset.
-* [Here is a link to the final project](https://chr15w1986.github.io/Javascript_PP2/)
+* Here is a link to the [final project](https://chr15w1986.github.io/Javascript_PP2/)
 ## FINAL DESIGN
 
 ![Final project image home page](assets/testing/finaldesign.png)
@@ -103,7 +103,7 @@ Site Goals:
 * Layout and content:
     * The layout is simple and stays centered across all screen widths
     * The text and heading are top and bottom to keep the main game area in the centre
-## DESIGN
+
 * Color Scheme:
     * For the game I chose light and bright colours to keep it fun looking
     * The color scheme chosen were Light yellow and Blue, With Dark Grey text rgb(32, 30, 30)
@@ -191,6 +191,18 @@ Site Goals:
 * The image loads on the background as intended on all screen sizes
 #
 # TECHNOLOGIES USED
+
+## DEVELOPMENT
+
+* The project was written and tested using [Vscode](https://code.visualstudio.com/)
+* The project uses [Github](https://github.com/) for utilising git version control
+* The project was debugged using [Google Chrome Development tools](https://developer.chrome.com/docs/devtools/)
+
+## DESIGN
+
+* The project's wireframes were designed in [Balsamiq](https://balsamiq.com/wireframes/)
+* The project utilised [favicon.io](https://favicon.io/favicon-converter/) to create the Favicon to the appropriate format
+* The background image was compressed using [TinyPNG](https://tinypng.com/)
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
 * [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
