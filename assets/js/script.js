@@ -34,6 +34,21 @@ function stopCountdown(timer) {
     document.getElementById("milliseconds").style.color = `rgba(32, 30, 30, 1)`;
 }
 
+// Function for calculating win or lose
+function calculateTime() {
+
+    let win = null;
+
+    // Calculate if within 200 seconds of reaching 0
+    if (offset > 200) {
+        win = false;
+    } else if (offset < -200) {
+        win = false;
+    } else {
+        win = true;
+    }
+}
+
 // Start timer:
 document.getElementById("start").addEventListener("click", function () {
 
