@@ -157,19 +157,19 @@ Site Goals:
       * Edge
       * Firefox
       * Safari
-## Validators
+## Validation
 
-* I ran all of my code through css-validator and html-validator, No errors found
+* I ran all of my code through [css-validator](https://jigsaw.w3.org/css-validator/) and [html-validator](https://validator.w3.org/#validate_by_input)
+    * See [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) for the ONE STOP CLOCK report on CSS Validator
+    * See [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F) for the ONE STOP CLOCK report on HTML Validator
 * I ran all of my Javascript code through JSHint, No errors found
-* See [HERE](assets/testing/JSHint.png) for JSHint Report
-* See [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) for the ONE STOP CLOCK report on CSS Validator
-* See [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F) for the ONE STOP CLOCK report on HTML Validator
+    * See [HERE](assets/testing/JSHint.png) for JSHint Report
+
 ## Lighthouse
 
 * I ran the game live through Chrome Lighthouse and received the following results with an average of 98% for Performance, Accessibility and Best practices.
 ![REPORT](assets/testing/lighthouse.png)
-## Game
-![ONE STOP CLOCK](/testing/home.png)
+
 ## Accessibility
 
 * The game has been run through wave.webaim.org for accessibility testing.
@@ -198,15 +198,17 @@ Site Goals:
 * The project uses [Github](https://github.com/) for utilising git version control
 * The project was debugged using [Google Chrome Development tools](https://developer.chrome.com/docs/devtools/)
 
+<!-- With more time i would have used frameworks such as Jasmine for testing https://jasmine.github.io/pages/getting_started.html -->
+
 ## DESIGN
 
 * The project's wireframes were designed in [Balsamiq](https://balsamiq.com/wireframes/)
 * The project utilised [favicon.io](https://favicon.io/favicon-converter/) to create the Favicon to the appropriate format
 * The background image was compressed using [TinyPNG](https://tinypng.com/)
 
-* [HTML](https://en.wikipedia.org/wiki/HTML5)
-* [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
-* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3)
+* [JAVASCRIPT ES6](https://en.wikipedia.org/wiki/JavaScript)
 ## PROGRAMS USED
 
 * GIT
@@ -297,6 +299,7 @@ If you need to make a local clone:
 ### CODE
 
 * [Stackoverflow](https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) For milliseconds throttle amount code
+* [OSTraining](https://www.ostraining.com/blog/coding/stopwatch/) On how to create a stopwatch in javascript
 * Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT.
 #
 ## ACKNOWLEDGEMENTS:
