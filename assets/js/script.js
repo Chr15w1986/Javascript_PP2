@@ -85,9 +85,10 @@ document.getElementById("stop").addEventListener("click", function () {
 // Reset game:
 document.getElementById("reset").addEventListener("click", function () {
 
-    startCountdown(timer);
+    stopCountdown(timer);
 
     // Add/Remove Hidden Class from HTML Elements
     document.getElementById("stop").classList.add("hidden");
     document.getElementById("start").classList.remove("hidden");
+
 });
