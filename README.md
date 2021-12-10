@@ -90,6 +90,8 @@ Site Goals:
     * A heading of One Stop Clock
     * An introduction of what the game consists of
     * Rules (How to play) at the bottom of the screen
+    * An alert box appears once the stop button has been clicked to let the user know if they are within 300ms of zero
+    * An alert box to tell the user whether they have won or lost and by how much, worked out in milliseconds
 
 * Future features:
     * I would add a highest score `Scoreboard` for competitions
@@ -203,7 +205,7 @@ Site Goals:
 
 ## DEVELOPMENT
 
-* The project was written and tested using [Vscode](https://code.visualstudio.com/)
+* The project was written and tested using [Gitpod](https://gitpod.io/)
 * The project uses [Github](https://github.com/) for utilising git version control
 * The project was debugged using [Google Chrome Development tools](https://developer.chrome.com/docs/devtools/)
 
@@ -228,8 +230,6 @@ Site Goals:
   * Used to store repositories, files and images pushed from gitpod
 * Am I Responsive
   * Used to test responsiveness of the game at different screen sizes
-* CHROME Developer tools
-  * For checking compatibilty, troubleshooting and editing code
 * With more time I would have used frameworks such as [Jasmine](https://jasmine.github.io/pages/getting_started.html) for testing 
 #
 # DEPLOYMENT
