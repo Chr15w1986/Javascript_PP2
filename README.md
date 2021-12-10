@@ -31,15 +31,16 @@ I made the game for Mobile first so that is works on all screen sizes.
   - [DESIGN](#design)
 - [TESTING](#testing)
   - [DEVICES](#devices)
-  - [Validators](#validators)
+  - [Validation](#validation)
   - [Lighthouse](#lighthouse)
-  - [Game](#game)
   - [Accessibility](#accessibility)
   - [SOLVED BUGS AND ERRORS](#solved-bugs-and-errors)
   - [UNSOLVED BUGS OR ERRORS](#unsolved-bugs-or-errors)
   - [FUNCTIONALITY](#functionality)
-- [TECHNOLOGIES USED](#technologies-used)
-  - [PROGRAMS USED](#programs-used)
+- [TECHNOLOGIES](#technologies)
+  - [DEVELOPMENT](#development)
+  - [DESIGN](#design)
+  - [LANGUAGES USED](#languages-used) 
 - [DEPLOYMENT](#deployment)
   - [REMOTE DEPLOYMENT:](#remote-deployment)
   - [HOW TO CREATE A BRANCH/TAG OF MAIN:](#how-to-create-a-branchtag-of-main)
@@ -51,11 +52,6 @@ I made the game for Mobile first so that is works on all screen sizes.
     - [CODE](#code)
   - [ACKNOWLEDGEMENTS:](#acknowledgements)
       - [RETURN TO THE TOP](#return-to-the-top)
-
-- [CREDITS](#credits-and-references)
-  * [IMAGES AND INFORMATION](#images-and-information)
-  * [CODE](#code)
-- [ACKNOWLEDGEMENTS](#acknowledgements)
 
 #
 # UX/UI
@@ -90,8 +86,12 @@ Site Goals:
     * A heading of One Stop Clock
     * An introduction of what the game consists of
     * Rules (How to play) at the bottom of the screen
-    * An alert box appears once the stop button has been clicked to let the user know if they are within 300ms of zero
+    * An alert box appears once the stop button has been clicked to let the user know if they are within +-300ms of zero
     * An alert box to tell the user whether they have won or lost and by how much, worked out in milliseconds
+    * The user will experience feedback in the form of an alert box with how many milliseconds they won or lost by.
+![alert box example](assets/testing/winlose.png)
+![alert box example](assets/testing/winlose2.png)
+
 
 * Future features:
     * I would add a highest score `Scoreboard` for competitions
@@ -166,6 +166,7 @@ Site Goals:
     * See [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchr15w1986.github.io%2FJavascript_PP2%2F) for the ONE STOP CLOCK report on HTML Validator
 * I ran all of my Javascript code through JSHint, No errors found
     * See [HERE](assets/testing/JSHint.png) for JSHint Report
+* With more time I would have used frameworks such as [Jasmine](https://jasmine.github.io/pages/getting_started.html) for testing 
 
 ## Lighthouse
 
@@ -184,7 +185,7 @@ Site Goals:
     * This was cured by adding a global variable of `const timer = 5000;` to ensure the timer is visible once the page loaded.
 * There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5. 
     * I cured this by creating a variable of throttleAmount and setting it to 4ms.
-* Any duplicate or unused selectors, classes, id's and elements have been removed
+* Any duplicate or unused code i.e: selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
 
 ## UNSOLVED BUGS OR ERRORS
@@ -196,10 +197,7 @@ Site Goals:
 * All buttons have been clicked on to ensure correct function
 * The game loads correctly on all device screen sizes
 * The image loads on the background as intended on all screen sizes
-
-### Feedback
-* The user will experience feedback in the form of an alert box with how many milliseconds they won or lost by.
-![alert box example](assets/testing/winlose.png)
+* The alert box functions as expected when you're above 200ms, when you're within 200ms, and when you're below -200ms
 #
 # TECHNOLOGIES
 
@@ -208,6 +206,7 @@ Site Goals:
 * The project was written and tested using [Gitpod](https://gitpod.io/)
 * The project uses [Github](https://github.com/) for utilising git version control
 * The project was debugged using [Google Chrome Development tools](https://developer.chrome.com/docs/devtools/)
+* The project was tested for responsiveness at different screen sizes using [Am-I-Responsive](http://ami.responsivedesign.is/#)  
 
 ## DESIGN
 
@@ -220,17 +219,7 @@ Site Goals:
 * The project was written using [HTML5](https://en.wikipedia.org/wiki/HTML5) for the basic structure
 * The project was written using [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) for styling
 * the project was written using [JAVASCRIPT ES6](https://en.wikipedia.org/wiki/JavaScript) for HTML manipulation
-## PROGRAMS USED
 
-* GIT
-  * For version control, commiting and pushing to github
-* GITPOD
-  * The IDE used to code the game
-* GITHUB
-  * Used to store repositories, files and images pushed from gitpod
-* Am I Responsive
-  * Used to test responsiveness of the game at different screen sizes
-* With more time I would have used frameworks such as [Jasmine](https://jasmine.github.io/pages/getting_started.html) for testing 
 #
 # DEPLOYMENT
 ## REMOTE DEPLOYMENT:
@@ -308,8 +297,8 @@ If you need to make a local clone:
 
 ### CODE
 
-* [Stackoverflow](https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) For milliseconds throttle amount code
-* [OSTraining](https://www.ostraining.com/blog/coding/stopwatch/) On how to create a stopwatch in javascript
+* [Stackoverflow](https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) For milliseconds throttle amount code and functions
+* [OSTraining](https://www.ostraining.com/blog/coding/stopwatch/) On how to create a stopwatch using javascript
 * Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT.
 #
 ## ACKNOWLEDGEMENTS:
