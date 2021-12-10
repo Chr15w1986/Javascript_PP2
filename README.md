@@ -29,7 +29,6 @@ I made the game for Mobile first so that is works on all screen sizes.
   - [WIREFRAMES](#wireframes)
   - [FEATURES](#features)
   - [DESIGN](#design)
-- [](#-1)
 - [TESTING](#testing)
   - [DEVICES](#devices)
   - [Validators](#validators)
@@ -81,7 +80,7 @@ Site Goals:
 
 ## WIREFRAMES
 
-* Wireframes for mobile and desktop can be viewed [here](assets/wireframes/wireframes.pdf)
+* Wireframes for mobile and desktop can be viewed [here](assets/wireframes/wireframes.pdf) (pdf)
 
 ## FEATURES
 
@@ -157,6 +156,7 @@ Site Goals:
       * Edge
       * Firefox
       * Safari
+* The game functions as intended on all viewports.
 ## Validation
 
 * I ran all of my code through [css-validator](https://jigsaw.w3.org/css-validator/) and [html-validator](https://validator.w3.org/#validate_by_input)
@@ -177,14 +177,19 @@ Site Goals:
 ## SOLVED BUGS AND ERRORS
 
 * A bug was found when the start button was pressed and then pressed again, it would multiply the countdown speed by two and continue counting down past 0ms infinitely. 
-* The stop button, although it stopped the timer, if the start button was pressed, the timer would deduct 4ms and then count past the 0ms into minus figures.
+    * This was cured by adding a `hidden` class to the buttons in HTML, so that once the start button is pressed, it switches to the stop button, meaning the start button cannot physically be pressed again until the game is reset.
 * The timer itself wouldnt show upon loading the page until the start button had been pressed and the timer started counting down.
-* There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5. I cured this by creating a variable of throttleAmount and setting it to 4ms.
+    * This was cured by adding a global variable of `const timer = 5000;` to ensure the timer is visible once the page loaded.
+* There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5. 
+    * I cured this by creating a variable of throttleAmount and setting it to 4ms.
 * Any duplicate or unused selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
 
 ## UNSOLVED BUGS OR ERRORS
 
+* The stop button, although it stopped the timer, if the start button was then pressed again, the timer would deduct 4ms and then count past the 0ms into minus figures. 
+    * This was actually due to the `throttleAmount` loop being re-run at the interval of 4ms. 
+        - The error still exists, but, it is such a small amount of time (4 milliseconds) that it is hardly noticeable to the user.
 ## FUNCTIONALITY
 * All buttons have been clicked on to ensure correct function
 * The game loads correctly on all device screen sizes
@@ -305,7 +310,7 @@ If you need to make a local clone:
 ## ACKNOWLEDGEMENTS:
 
 - Code institute for the Tutors on the course.
-- My Mentor [Ben Kavanagh](https://github.com/BAK2K3) for his brilliant advice on my code, whether it is right or wrong, excellent way with words and constantly believing in me.
+- My Mentor [Ben Kavanagh](https://github.com/BAK2K3) for his brilliant advice on my code, whether my code is right or wrong, his excellent way with words and constantly believing in me.
 - Dave Horrocks, for taking time out of his own studies, for his excellent teaching style and expertise on all things javascript.
 - My family for their support and patience.
 - Everybody on Slack for tips, advice, quick fixes and kind words.
