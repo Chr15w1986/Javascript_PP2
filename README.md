@@ -8,7 +8,7 @@
 * Here is a link to the [final project](https://chr15w1986.github.io/Javascript_PP2/)
 ## FINAL DESIGN
 
-![Final project image home page](assets/testing/finaldesign.png)
+![Final project image](assets/testing/finaldesign.png)
 
 ## INITIAL IDEA CONCEPT
 
@@ -194,8 +194,12 @@ Site Goals:
 * All buttons have been clicked on to ensure correct function
 * The game loads correctly on all device screen sizes
 * The image loads on the background as intended on all screen sizes
+
+### Feedback
+* The user will experience feedback in the form of an alert box with how many milliseconds they won or lost by.
+![alert box example](assets/testing/winlose.png)
 #
-# TECHNOLOGIES USED
+# TECHNOLOGIES
 
 ## DEVELOPMENT
 
@@ -203,17 +207,17 @@ Site Goals:
 * The project uses [Github](https://github.com/) for utilising git version control
 * The project was debugged using [Google Chrome Development tools](https://developer.chrome.com/docs/devtools/)
 
-<!-- With more time i would have used frameworks such as Jasmine for testing https://jasmine.github.io/pages/getting_started.html -->
-
 ## DESIGN
 
 * The project's wireframes were designed in [Balsamiq](https://balsamiq.com/wireframes/)
 * The project utilised [favicon.io](https://favicon.io/favicon-converter/) to create the Favicon to the appropriate format
 * The background image was compressed using [TinyPNG](https://tinypng.com/)
 
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3)
-* [JAVASCRIPT ES6](https://en.wikipedia.org/wiki/JavaScript)
+## LANGUAGES USED
+
+* The project was written using [HTML5](https://en.wikipedia.org/wiki/HTML5) for the basic structure
+* The project was written using [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) for styling
+* the project was written using [JAVASCRIPT ES6](https://en.wikipedia.org/wiki/JavaScript) for HTML manipulation
 ## PROGRAMS USED
 
 * GIT
@@ -226,6 +230,7 @@ Site Goals:
   * Used to test responsiveness of the game at different screen sizes
 * CHROME Developer tools
   * For checking compatibilty, troubleshooting and editing code
+* With more time I would have used frameworks such as [Jasmine](https://jasmine.github.io/pages/getting_started.html) for testing 
 #
 # DEPLOYMENT
 ## REMOTE DEPLOYMENT:
