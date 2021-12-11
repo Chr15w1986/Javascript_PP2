@@ -185,11 +185,11 @@ Site Goals:
 ## SOLVED BUGS AND ERRORS
 
 * A bug was found when the start button was pressed and then pressed again, it would multiply the countdown speed by two and continue counting down past 0ms infinitely. 
-    * This was cured by adding a `hidden` class to the buttons in HTML, so that once the start button is pressed, it switches to the stop button, meaning the start button cannot physically be pressed again until the game is reset.
+    * This was fixed by adding a `hidden` class to the buttons in HTML, so that once the start button is pressed, it switches to the stop button, meaning the start button cannot physically be pressed again until the game is reset.
 * The timer itself wouldnt show upon loading the page until the start button had been pressed and the timer started counting down.
-    * This was cured by adding a global variable of `const timer = 5000;` to ensure the timer is visible once the page loaded.
+    * This was fixed by setting the global variable of timer to 5000, and then used it to assign the innerHTML of the timer element on page load to ensure the timer is visible.
 * There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5. 
-    * I cured this by creating a variable of throttleAmount and setting it to 4ms.
+    * I fixed this by creating a variable of throttleAmount and setting it to 4ms.
 * Any duplicate or unused code i.e: selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
 
