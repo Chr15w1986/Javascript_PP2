@@ -198,6 +198,7 @@ Site Goals:
 * The stop button, although it stopped the timer, if the start button was then pressed again, the timer would deduct 4ms and then count past the 0ms into minus figures. 
     * This was actually due to the `throttleAmount` loop being re-run at the interval of 4ms. 
         - The error still exists, but, it is such a small amount of time (4 milliseconds) that it is hardly noticeable to the user.
+        ![alert box example](assets/testing/error4ms.png)
 
 #
 # TECHNOLOGIES
