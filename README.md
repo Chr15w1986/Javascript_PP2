@@ -58,7 +58,7 @@ I made the game for Mobile first so that is works on all screen sizes.
 * The game was created to show my knowledge of JAVASCRIPT including, HTML and CSS
 * To provide users with a game that is easy to play and fun
 * The user is able to interact with 2/3 clear buttons to play the game
-* Any interactive buttons should clear and obvious as to what they do
+* Any interactive buttons should be clear and obvious as to what they do
 
 Site Goals:
 
@@ -82,7 +82,7 @@ Site Goals:
 
 * The Game consists of: 
     * One page with two large buttons and a timer
-    * The Start button, once clicked, changes to Stop for to provide a user friendly experience 
+    * The Start button, once clicked, changes to Stop to provide a user friendly experience 
     * A heading of One Stop Clock
     * An introduction of what the game consists of
     * Rules (How to play) at the bottom of the screen
