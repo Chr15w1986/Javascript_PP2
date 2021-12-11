@@ -243,6 +243,7 @@ Site Goals:
     * git push - to push all committed changes to the GitHub repository
     * git branch - to see which branch currently working on
     * git pull - to pull all code into main branch once the feature branch had been merged and deleted
+    * git status - to see if the branch currently working on is upto date or if the are any unstaged
 
 ## HOW TO CREATE A BRANCH/TAG OF MAIN:
 
