@@ -298,6 +298,7 @@ If you need to make a local clone:
 ### CODE
 
 * [Stackoverflow](https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) For milliseconds throttle amount code and functions
+* [Stackoverflow](https://stackoverflow.com/questions/40638402/why-wont-my-countdown-timer-start-and-stop) For a function idea to get the timer to stop
 * [OSTraining](https://www.ostraining.com/blog/coding/stopwatch/) On how to create a stopwatch using javascript
 * Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT.
 #
