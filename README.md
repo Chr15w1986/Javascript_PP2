@@ -4,7 +4,7 @@
 
 ## PURPOSE
 
-'One Stop Clock' is a game where your reaction timing is key. Test your reactions by trying to get the timer as close to zero as possible with the use of the three buttons, Start, Stop and Reset.
+'One Stop Clock' is a game where your reaction timing is key. Test your reactions by trying to get the timer as close to zero as possible with the use of the three buttons: Start, Stop and Reset.
 * Here is a link to the [final project](https://chr15w1986.github.io/Javascript_PP2/)
 ## FINAL DESIGN
 
@@ -13,12 +13,12 @@
 ## INITIAL IDEA CONCEPT
 
 My initial idea for the project was to create a game that is simple to use and competitive. The game is for all ages and skill levels.
-I chose to make the game quite bright and fun looking with yellows and blues.
+I chose to make the game quite bright and fun looking with yellows and blues, as they contrast well.
 I made the game for Mobile first so that is works on all screen sizes.
 
-* The Features I wanted the game to have are:
+* The Features I wanted the game to have were:
 
-    * To have simple to read rules.
+    * To have simple to read rules
     * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
     * Have a simple layout with 2 clear buttons with corresponding colours
 #  
@@ -86,9 +86,9 @@ Site Goals:
     * A heading of One Stop Clock
     * An introduction of what the game consists of
     * Rules (How to play) at the bottom of the screen
-    * An alert box appears once the stop button has been clicked to let the user know if they are within +-300ms of zero
+    * An alert box appears once the stop button has been clicked to let the user know if they are within +/-300ms of zero
     * An alert box to tell the user whether they have won or lost and by how much, worked out in milliseconds
-    * The user will experience feedback in the form of an alert box with how many milliseconds they won or lost by.
+    * The user will experience feedback in the form of an alert box with how many milliseconds they won or lost by
 ![alert box example](assets/testing/winlose.png)
 ![alert box example](assets/testing/winlose2.png)
 
@@ -96,9 +96,9 @@ Site Goals:
 * Future features:
     * I would add a highest score `Scoreboard` for competitions
     * Add an option for the user to set their own timer `Value`
-    * Add an option for the user to set different difficulty levels, 
-        * I.e The speed the timer reduces by,
-        * The timer becomes easier or harder to see by adjusting the transparency level,
+    * Add an option for the user to set different difficulty levels
+        * I.e., the speed the timer reduces by
+        * The timer becomes easier or harder to see by adjusting the transparency level
         * An option to stop the timer at a randomly set time rather than zero
   
 * Layout and content:
@@ -106,9 +106,9 @@ Site Goals:
     * The text and heading are top and bottom to keep the main game area in the centre
 
 * Color Scheme:
-    * For the game I chose light and bright colours to keep it fun looking
-    * The color scheme chosen were Light yellow and Blue, With Dark Grey text rgb(32, 30, 30)
-    * The background image will be Light Blue in the shape of a clock rgb(63,72,204)
+    * For the game I chose light and bright colours to keep it appealing to the eye
+    * The color scheme chosen was light yellow and blue, With dark grey text rgb(32, 30, 30)
+    * The background image will be light blue in the shape of a clock rgb(63,72,204)
     * The background colour is light yellow rgb(221,185,86)
     * The button colours are a traffic light system with Red (STOP), Green (START) and Amber/Orange (RESET)
   
@@ -121,7 +121,7 @@ Site Goals:
 
 
 * IMAGES
-    * There is one background image, a silhouette of a clock.
+    * There is one background image, a silhouette of a clock
     * The image has been compressed through `Tinypng.com`
     * The image used has not been pushed past the pixel limit in order to prevent image distortion
 
@@ -137,14 +137,14 @@ Site Goals:
 * `As a user, I want the game to be colourful and fun`:
     *  I used bright colours, simple traffic light colours for stop start and reset. Outcome: `Fulfilled.`
 * `As a user, I want to be able to try something new`:
-    * The concept of the game (although simple) is exciting and different, enough to keep the user trying over and over to reach the best score he/she them/they can. `Fulfilled.`
+    * The concept of the game (although simple) is exciting and different, enough to keep the user trying over and over to reach the best score he/she, them/they can. Outcome: `Fulfilled.`
 * `As a user, I want to see obvious and clear buttons to play the game`:
     * I included two large and easy to read buttons with accompanying colours to differentiate between them. Outcome: `Fulfilled.`
 ## FUNCTIONALITY
 * All buttons have been clicked on to ensure correct function
 * The game loads correctly on all device screen sizes
 * The image loads on the background as intended on all screen sizes
-* The alert box functions as expected when you're above 200ms, when you're within 200ms, and when you're below -200ms
+* The alert box functions as expected when you're above 300ms, when you're within 300ms, and when you're below -300ms
 ## DEVICES
 * I have tested responsiveness and functionality on the following devices and browsers:
     * Android:
@@ -180,25 +180,25 @@ Site Goals:
 
 ## Accessibility
 
-* The game has been run through wave.webaim.org for accessibility testing.
+* The game has been run through wave.webaim.org for accessibility testing
     * Found here: [Full Report](https://wave.webaim.org/report#/https://chr15w1986.github.io/Javascript_PP2/)
 ## SOLVED BUGS AND ERRORS
 
-* A bug was found when the start button was pressed and then pressed again, it would multiply the countdown speed by two and continue counting down past 0ms infinitely. 
-    * This was fixed by adding a `hidden` class to the buttons in HTML, so that once the start button is pressed, it switches to the stop button, meaning the start button cannot physically be pressed again until the game is reset.
-* The timer itself wouldnt show upon loading the page until the start button had been pressed and the timer started counting down.
-    * This was fixed by setting the global variable of timer to 5000, and then used it to assign the innerHTML of the timer element on page load to ensure the timer is visible.
-* There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5. 
-    * I fixed this by creating a variable of throttleAmount and setting it to 4ms.
-* Any duplicate or unused code i.e: selectors, classes, id's and elements have been removed
+* A bug was found when the start button was pressed and then pressed again, it would multiply the countdown speed by two and continue counting down past 0ms infinitely
+    * This was fixed by adding a `hidden` class to the buttons in HTML, so that once the start button is pressed, it switches to the stop button, meaning the start button cannot physically be pressed again until the game is reset
+* The timer itself wouldn't show upon loading the page until the start button had been pressed and the timer started counting down
+    * This was fixed by setting the global variable of timer to 5000, and then used it to assign the innerHTML of the timer element on page load to ensure the timer is visible
+* There was an issue with setInterval, with some research I came to realise the minimum DOM handling was no lower than 4ms per interval for HTML5
+    * I fixed this by creating a variable of throttleAmount and setting it to 4ms
+* Any duplicate or unused code i.e., selectors, classes, id's and elements have been removed
 * Any irrelevant space in between code has been removed
 
 ## UNSOLVED BUGS OR ERRORS
 
-* The stop button, although it stopped the timer, if the start button was then pressed again, the timer would deduct 4ms and then count past the 0ms into minus figures. 
-    * This was actually due to the `throttleAmount` loop being re-run at the interval of 4ms. 
-        - The error still exists, but, it is such a small amount of time (4 milliseconds) that it is hardly noticeable to the user.
-        ![alert box example](assets/testing/error4ms.png)
+* The stop button, although it stopped the timer, if the start button was then pressed again, the timer would deduct 4ms and then count past the 0ms into minus figures
+    * This was actually due to the `throttleAmount` loop being re-run at the interval of 4ms
+        - The error still exists, but, it is such a small amount of time (4 milliseconds) that it is hardly noticeable to the user
+* ![alert box example](assets/testing/error4ms.png)
 
 #
 # TECHNOLOGIES
@@ -225,18 +225,18 @@ Site Goals:
 #
 # DEPLOYMENT
 ## REMOTE DEPLOYMENT:
-(Assuming you have already cloned or forked,)
+(Assuming you have already cloned or forked)
 * This Game was deployed using GitHub Pages with the following the steps:
 
 1. Click on the `Settings` icon at the top of page in the navigation bar
 2. Scroll down until you see `Github Pages`
-3. There will be a message box saying "Check it out here" Click on the link to take you to the next page
-4. Here you will be greated with a form, Choose the repository `Javascript_PP2`
+3. There will be a message box saying `Check it out here` Click on the link to take you to the next page
+4. Here you will be greated with a form, `Choose the repository` `Javascript_PP2`
 5. Choose the branch in the drop down box, in this case `MAIN`
 6. Choose the directory in the next drop down box, in this case `Root`
 7. Then click `Save`
 8. It may take a few moments for the game to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live page
-9. Another way to find the live page is to navigate to settings, on the left menu click on `pages` and this will get you to the same point.
+9. Another way to find the live page is to navigate to settings, on the left menu click on `pages` and this will get you to the same point
 
 * These commands were used for version control during project:
 
@@ -249,18 +249,18 @@ Site Goals:
 
 ## HOW TO CREATE A BRANCH/TAG OF MAIN:
 
-If you need to "BRANCH" off of the main repository:
+If you need to `BRANCH` off of the main repository:
 
 1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Javascript_PP2
 2. On the left side of the screen underneath the nav links, click the drop down box `Main`
 3. Inside the box you will see `Create new branch/tag`
-4. Inside the text box, enter the new branch or tag name i.e `Features`
+4. Inside the text box, enter the new branch or tag name i.e., `Features`
 5. Below the Branches Tags tab, you will see `Create branch: Features from "main"`
 6. Click on `Create branch: Features from "main"` and you will be taken to the new branch page you just called `Features`
 
 ## HOW TO FORK A REPOSITORY:
 
-If you need to "FORK" a repository:
+If you need to `FORK` a repository:
 
 1. If you have not already, login in to [GitHub](www.github.com) and go to https://github.com/Chr15w1986/Javascript_PP2
 2. In the top right corner, click `Fork`
@@ -296,21 +296,21 @@ If you need to make a local clone:
 
 ### IMAGE
 
-* Background image, Silhouette of a Clock was taken from [Pixabay](https://pixabay.com/fi/illustrations/her%c3%a4tyskello-siluetti-kello-musta-2806057/)
+* Background image, silhouette of a clock was taken from [Pixabay](https://pixabay.com/fi/illustrations/her%c3%a4tyskello-siluetti-kello-musta-2806057/)
 
 ### CODE
 
 * [Stackoverflow](https://stackoverflow.com/questions/9647215/what-is-minimum-millisecond-value-of-settimeout) For milliseconds throttle amount code and functions
 * [Stackoverflow](https://stackoverflow.com/questions/40638402/why-wont-my-countdown-timer-start-and-stop) For a function idea to get the timer to stop
 * [OSTraining](https://www.ostraining.com/blog/coding/stopwatch/) On how to create a stopwatch using javascript
-* Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT.
+* Everybody on slack for pointing me to [W3Schools](https://www.w3schools.com/) for more indepth guides to the correct syntax and uses of Functions in JAVASCRIPT
 #
 ## ACKNOWLEDGEMENTS:
 
-- Code institute for the Tutors on the course.
-- My Mentor [Ben Kavanagh](https://github.com/BAK2K3) for his brilliant advice on my code, whether my code is right or wrong, his excellent way with words and constantly believing in me.
+- Code institute for the Tutors on the course
+- My Mentor [Ben Kavanagh](https://github.com/BAK2K3) for his brilliant advice on my code, whether my code is right or wrong, his excellent way with words and constantly believing in me
 - Dave Horrocks, for taking time out of his own studies, for his excellent teaching style and expertise on all things javascript.
-- My family for their support and patience.
-- Everybody on Slack for tips, advice, quick fixes and kind words.
+- My family for their support and patience
+- Everybody on Slack for tips, advice, quick fixes and kind words
 
 #### RETURN TO THE [TOP](#one-stop-clock)
