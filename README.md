@@ -140,6 +140,11 @@ Site Goals:
     * The concept of the game (although simple) is exciting and different, enough to keep the user trying over and over to reach the best score he/she them/they can. `Fulfilled.`
 * `As a user, I want to see obvious and clear buttons to play the game`:
     * I included two large and easy to read buttons with accompanying colours to differentiate between them. Outcome: `Fulfilled.`
+## FUNCTIONALITY
+* All buttons have been clicked on to ensure correct function
+* The game loads correctly on all device screen sizes
+* The image loads on the background as intended on all screen sizes
+* The alert box functions as expected when you're above 200ms, when you're within 200ms, and when you're below -200ms
 ## DEVICES
 * I have tested responsiveness and functionality on the following devices and browsers:
     * Android:
@@ -193,11 +198,7 @@ Site Goals:
 * The stop button, although it stopped the timer, if the start button was then pressed again, the timer would deduct 4ms and then count past the 0ms into minus figures. 
     * This was actually due to the `throttleAmount` loop being re-run at the interval of 4ms. 
         - The error still exists, but, it is such a small amount of time (4 milliseconds) that it is hardly noticeable to the user.
-## FUNCTIONALITY
-* All buttons have been clicked on to ensure correct function
-* The game loads correctly on all device screen sizes
-* The image loads on the background as intended on all screen sizes
-* The alert box functions as expected when you're above 200ms, when you're within 200ms, and when you're below -200ms
+
 #
 # TECHNOLOGIES
 
