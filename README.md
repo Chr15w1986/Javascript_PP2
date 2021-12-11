@@ -175,7 +175,7 @@ Site Goals:
 
 ## Lighthouse
 
-* I ran the game live through Chrome Lighthouse and received the following results with an average of 98% for Performance, Accessibility and Best practices.
+* I ran the game live through Chrome Lighthouse and received the following results with an average of 97.25% for Performance, Accessibility, Best practices and SEO.
 ![REPORT](assets/testing/lighthouse.png)
 
 ## Accessibility
